@@ -1,0 +1,208 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, h1, h2, h3, h4, h5, h6,
+p, a, img, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, form, label, legend,
+table, caption, aside, canvas, footer, header,
+menu, nav, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+hr {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+/*Mix - Ins*/
+/*@mixin*/
+/*Actual Styles*/
+html {
+  background: url(../images/escheresque_ste_@2X.png);
+  background-repeat: repeat; }
+
+body {
+  background-image: url(../images/bodybg.png);
+  background-position: 0px -120px;
+  width: 960px;
+  margin: 0 auto;
+  font-family: Tahoma, Geneva, sans-serif; }
+
+header {
+  background: url(../images/headerGradient.png);
+  background-repeat: repeat-x;
+  height: 100px;
+  padding-bottom: 100px; }
+  header nav #imgHolder {
+    float: left;
+    width: 320px; }
+    header nav #imgHolder img {
+      display: block;
+      width: 220px;
+      margin: 0 auto; }
+  header nav ul {
+    float: left;
+    width: 320px; }
+    header nav ul li {
+      float: left;
+      height: 90px;
+      width: 160px;
+      text-align: center;
+      list-style-type: none;
+      padding-left: 0; }
+      header nav ul li a {
+        color: #CCC;
+        text-decoration: none;
+        height: 70px;
+        font: 24px Tahoma, Geneva, sans-serif; }
+      header nav ul li a:hover {
+        color: #fff; }
+    header nav ul hr {
+      margin-top: 50px;
+      height: 5px; }
+    header nav ul #homeLink hr {
+      background-color: blue; }
+    header nav ul #workLink hr {
+      background-color: red; }
+    header nav ul #aboutLink hr {
+      background-color: lime; }
+    header nav ul #contactLink hr {
+      background-color: yellow; }
+
+/*CTA Styles*/
+.ctaInfo {
+  clear: both;
+  float: left;
+  padding: 60px 10px 150px 10px;
+  width: 300px; }
+  .ctaInfo h1 {
+    font: 48px Futura, serif;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px 0 5px 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black; }
+  .ctaInfo p {
+    padding: 15px 10px 5px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    line-height: 18px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #000; }
+    .ctaInfo p b {
+      font-weight: 400;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      color: #cccccc; }
+
+.cta {
+  float: left;
+  padding: 25px 20px 0px 20px;
+  width: 600px;
+  text-align: center; }
+  .cta h2 {
+    float: left;
+    width: 100%;
+    font: 93px Rockwell, serif; }
+  .cta h4 {
+    float: left;
+    width: 80px;
+    font: 75px "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+  .cta h3 {
+    font: 73px "Britannic Bold";
+    letter-spacing: 10px; }
+  .cta hr {
+    width: 260px;
+    float: left;
+    margin-top: 50px;
+    height: 2px;
+    background-color: #000; }
+
+/*Main Content*/
+.mainContent {
+  overflow: hidden;
+  clear: both;
+  padding-top: 100px;
+  background: url(../images/mainGradient.png) 0px 0px repeat-x, url(../images/kindajean_@2X.png) 10px 10px repeat; }
+
+/*Column Styles*/
+.column {
+  float: left;
+  width: 300px;
+  padding: 0px 9px;
+  /*Color Styles*/ }
+  .column h3 {
+    height: 55px;
+    overflow: hidden;
+    text-align: center;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3), -1px -1px rgba(204, 204, 204, 0.7);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.2); }
+  .column a {
+    display: block;
+    text-align: right;
+    text-decoration: none; }
+  .column p {
+    height: 150px;
+    line-height: 20px;
+    padding: 10px 0 0 5px;
+    background-color: rgba(0, 0, 0, 0.2); }
+  .column img {
+    width: 300px;
+    height: 220px;
+    margin: 0 auto; }
+  .column span {
+    font: 16px Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1px; }
+  .column hr {
+    height: 7px; }
+  .column .red {
+    color: #b30000; }
+  .column .green {
+    color: green; }
+  .column .blue {
+    color: #0000b3; }
+
+.column#code hr {
+  background-color: red; }
+.column#code h3 {
+  font: 48px "Britannic Bold"; }
+
+.column#design hr {
+  background-color: lime; }
+.column#design h3 {
+  font: 40px Rockwell; }
+
+.column#inspiration hr {
+  background-color: blue; }
+.column#inspiration h3 {
+  font: 40px Futura; }
+
+/*Footer*/
+footer {
+  clear: both;
+  background-image: url(../images/headerGradient.png);
+  background-position: 0px -50px;
+  background-repeat: repeat-x; }
+  footer p {
+    padding: 10px 0;
+    text-align: center;
+    color: #CCC; }
