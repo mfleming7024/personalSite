@@ -90,11 +90,11 @@ header {
 .ctaInfo {
   clear: both;
   float: left;
-  padding: 60px 10px 70px 10px;
+  padding: 80px 10px 70px 10px;
   width: 300px;
-  -moz-box-shadow: 0 0 15px 3px #000;
-  -webkit-box-shadow: 0 0 15px 3px #000;
-  box-shadow: 0 0 15px 3px #000; }
+  -webkit-box-shadow: 0px 0px 20px #323232;
+  -moz-box-shadow: 0px 0px 20px #323232;
+  box-shadow: 0px 0px 20px #323232; }
   .ctaInfo h1 {
     font: 48px Futura, serif;
     border-top-left-radius: 10px;
@@ -161,11 +161,12 @@ header {
   .column a {
     display: block;
     text-align: right;
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 10px 0px; }
   .column p {
     height: 150px;
     line-height: 20px;
-    padding: 10px 0 0 5px;
+    padding: 10px 0px 0px 5px;
     background-color: rgba(0, 0, 0, 0.2); }
   .column img {
     width: 300px;
@@ -209,3 +210,37 @@ footer {
     padding: 10px 0;
     text-align: center;
     color: #CCC; }
+
+/*Keyframes*/
+@keyframes mymove {
+  from {
+    top: 0px; }
+
+  to {
+    top: 200px; } }
+
+@-moz-keyframes mymove {
+  from {
+    top: 0px; }
+
+  to {
+    top: 200px; } }
+
+@-webkit-keyframes mymove {
+  from {
+    top: 0px; }
+
+  to {
+    top: 200px; } }
+
+@-o-keyframes mymove {
+  from {
+    top: 0px; }
+
+  to {
+    top: 200px; } }
+
+                                     /*animation:mymove 5s infinite;
+/*-moz-animation:mymove 5s infinite; /* Firefox */
+/*-webkit-animation:mymove 5s infinite; /* Safari and Chrome */
+/*-o-animation:mymove 5s infinite; /* Opera */
