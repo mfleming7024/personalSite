@@ -66,25 +66,34 @@ header {
       width: 160px;
       text-align: center;
       list-style-type: none;
-      padding-left: 0; }
+      padding: 30px 0 0 0; }
       header nav ul li a {
         color: #CCC;
         text-decoration: none;
+        display: block;
         height: 70px;
+        width: inherit;
         font: 24px Tahoma, Geneva, sans-serif; }
-      header nav ul li a:hover {
-        color: #fff; }
-    header nav ul hr {
-      margin-top: 50px;
-      height: 5px; }
-    header nav ul #homeLink hr {
-      background-color: blue; }
-    header nav ul #workLink hr {
-      background-color: red; }
-    header nav ul #aboutLink hr {
-      background-color: lime; }
-    header nav ul #contactLink hr {
-      background-color: yellow; }
+    header nav ul li#homeLink a {
+      border-top: 10px solid blue; }
+      header nav ul li#homeLink a:hover {
+        -webkit-animation: mymoveBlue 0.7s alternate 2;
+        /* Safari and Chrome */ }
+    header nav ul li#workLink a {
+      border-top: 10px solid red; }
+      header nav ul li#workLink a:hover {
+        -webkit-animation: mymoveRed 0.7s alternate 2;
+        /* Safari and Chrome */ }
+    header nav ul li#aboutLink a {
+      border-top: 10px solid lime; }
+      header nav ul li#aboutLink a:hover {
+        -webkit-animation: mymoveGreen 0.7s alternate 2;
+        /* Safari and Chrome */ }
+    header nav ul li#contactLink a {
+      border-top: 10px solid yellow; }
+      header nav ul li#contactLink a:hover {
+        -webkit-animation: mymoveYellow 0.7s alternate 2;
+        /* Safari and Chrome */ }
 
 /*CTA Styles*/
 .ctaInfo {
@@ -167,10 +176,17 @@ header {
     height: 150px;
     line-height: 20px;
     padding: 10px 0px 0px 5px;
-    background-color: rgba(0, 0, 0, 0.2); }
+    background-image: -ms-radial-gradient(left top, ellipse farthest-side, white 0%, #919191 100%);
+    background-image: -moz-radial-gradient(left top, ellipse farthest-side, white 0%, #919191 100%);
+    background-image: -o-radial-gradient(left top, ellipse farthest-side, white 0%, #919191 100%);
+    background-image: -webkit-gradient(radial, left top, 0, left top, 954, color-stop(0, white), color-stop(1, #919191));
+    background-image: -webkit-radial-gradient(left top, ellipse farthest-side, white 0%, #919191 100%);
+    background-image: radial-gradient(ellipse farthest-side at left top, white 0%, #919191 100%); }
   .column img {
     width: 300px;
     height: 220px;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
     margin: 0 auto; }
   .column span {
     font: 16px Arial, Helvetica, sans-serif;
@@ -212,33 +228,29 @@ footer {
     color: #CCC; }
 
 /*Keyframes*/
-@keyframes mymove {
-  from {
-    top: 0px; }
-
+@-webkit-keyframes mymoveBlue {
   to {
-    top: 200px; } }
+    border-top: 20px solid #0000cc;
+    color: #FFF;
+    font-size: 32px; } }
 
-@-moz-keyframes mymove {
-  from {
-    top: 0px; }
-
+@-webkit-keyframes mymoveGreen {
   to {
-    top: 200px; } }
+    border-top: 20px solid #00cc00;
+    color: #FFF;
+    font-size: 32px; } }
 
-@-webkit-keyframes mymove {
-  from {
-    top: 0px; }
-
+@-webkit-keyframes mymoveRed {
   to {
-    top: 200px; } }
+    border-top: 20px solid #cc0000;
+    color: #FFF;
+    font-size: 32px; } }
 
-@-o-keyframes mymove {
-  from {
-    top: 0px; }
-
+@-webkit-keyframes mymoveYellow {
   to {
-    top: 200px; } }
+    border-top: 20px solid #cccc00;
+    color: #FFF;
+    font-size: 32px; } }
 
                                      /*animation:mymove 5s infinite;
 /*-moz-animation:mymove 5s infinite; /* Firefox */
