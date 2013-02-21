@@ -57,6 +57,8 @@ header {
       display: block;
       width: 320px; }
     header nav #imgHolder img {
+      display: block;
+      width: 280px;
       margin: 0 auto; }
   header nav ul {
     float: left;
