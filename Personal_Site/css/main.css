@@ -53,10 +53,10 @@ header {
   header nav #imgHolder {
     float: left;
     width: 320px; }
-    header nav #imgHolder img {
+    header nav #imgHolder object {
+      margin-top: -20px;
       display: block;
-      width: 220px;
-      margin: 0 auto; }
+      width: 320px; }
   header nav ul {
     float: left;
     width: 320px; }
@@ -71,7 +71,7 @@ header {
         color: #CCC;
         text-decoration: none;
         display: block;
-        height: 70px;
+        height: 57px;
         width: inherit;
         font: 24px Tahoma, Geneva, sans-serif; }
     header nav ul li#homeLink a {
@@ -100,17 +100,14 @@ header {
   clear: both;
   float: left;
   padding: 80px 10px 70px 10px;
-  width: 300px;
-  -webkit-box-shadow: 0px 0px 20px #323232;
-  -moz-box-shadow: 0px 0px 20px #323232;
-  box-shadow: 0px 0px 20px #323232; }
+  width: 300px; }
   .ctaInfo h1 {
     font: 48px Futura, serif;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 5px 0 5px 10px;
-    background-color: rgba(255, 255, 255, 0.7);
-    color: black; }
+    background-color: black;
+    color: white; }
   .ctaInfo p {
     padding: 15px 10px 5px 10px;
     border-bottom-left-radius: 10px;
@@ -230,25 +227,25 @@ footer {
 /*Keyframes*/
 @-webkit-keyframes mymoveBlue {
   to {
-    border-top: 20px solid #0000cc;
+    border-top: 20px solid #0000b3;
     color: #FFF;
     font-size: 32px; } }
 
 @-webkit-keyframes mymoveGreen {
   to {
-    border-top: 20px solid #00cc00;
+    border-top: 20px solid #00b300;
     color: #FFF;
     font-size: 32px; } }
 
 @-webkit-keyframes mymoveRed {
   to {
-    border-top: 20px solid #cc0000;
+    border-top: 20px solid #b30000;
     color: #FFF;
     font-size: 32px; } }
 
 @-webkit-keyframes mymoveYellow {
   to {
-    border-top: 20px solid #cccc00;
+    border-top: 20px solid #b2b300;
     color: #FFF;
     font-size: 32px; } }
 
