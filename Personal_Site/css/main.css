@@ -109,6 +109,7 @@ header {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 5px 0 5px 10px;
+    text-align: center;
     color: #ffffff;
     background-color: #000000;
     border-style: ridge;
@@ -120,12 +121,12 @@ header {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     line-height: 18px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
     color: #000; }
     .ctaInfo p b {
-      font-weight: 400;
-      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-      color: #cccccc; }
+      font-weight: 900;
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      color: #333333; }
 
 .cta {
   float: left;
