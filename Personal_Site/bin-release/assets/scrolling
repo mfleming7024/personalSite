@@ -1,0 +1,12 @@
+Scrolling
+
+-more resource intensive
+-entire content must be loaded
+
+	Requires
+		-Scrollbar
+		-Content Holder
+		-Mask
+	
+	Example
+		-content.y = -scrollbar.percent * (content.height - mask.height);

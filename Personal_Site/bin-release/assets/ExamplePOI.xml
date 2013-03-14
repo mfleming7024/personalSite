@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <info>
+    <statusCode>0</statusCode>
+    <messages/>
+    <copyright>
+      <imageUrl>http://api.mqcdn.com/res/mqlogo.gif</imageUrl>
+      <imageAltText>© 2013 MapQuest, Inc.</imageAltText>
+      <text>© 2013 MapQuest, Inc.</text>
+    </copyright>
+  </info>
+  <results>
+    <result>
+      <providedLocation>
+        <location>1032 Trout Creek Ct.</location>
+      </providedLocation>
+      <locations>
+        <location>
+          <street>1032 Trout Creek Court</street>
+          <adminArea5 type="City">Oviedo</adminArea5>
+          <adminArea3 type="State">Florida</adminArea3>
+          <adminArea4 type="County">Seminole County</adminArea4>
+          <postalCode>32765</postalCode>
+          <adminArea1 type="Country">United States of America</adminArea1>
+          <geocodeQuality>ADDRESS</geocodeQuality>
+          <geocodeQualityCode>L1BXX</geocodeQualityCode>
+          <dragPoint>false</dragPoint>
+          <sideOfStreet>N</sideOfStreet>
+          <displayLatLng>
+            <latLng>
+              <lat>28.638874</lat>
+              <lng>-81.177533</lng>
+            </latLng>
+          </displayLatLng>
+          <linkId>0</linkId>
+          <type>s</type>
+          <latLng>
+            <lat>28.638874</lat>
+            <lng>-81.177533</lng>
+          </latLng>
+          <mapUrl><![CDATA[http://open.mapquestapi.com/staticmap/v4/getmap?type=map&size=225,160&pois=purple-1,28.6388742250101,-81.177533,0,0|&center=28.6388742250101,-81.177533&zoom=12&key=Kmjtd%7Cluu7n162n1%2C22%3Do5-h61wh&rand=587608821]]></mapUrl>
+        </location>
+      </locations>
+    </result>
+  </results>
+  <options>
+    <maxResults>-1</maxResults>
+    <thumbMaps>true</thumbMaps>
+    <ignoreLatLngInput>false</ignoreLatLngInput>
+    <boundingBox/>
+  </options>
+</response>

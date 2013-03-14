@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <info>
+    <statusCode>0</statusCode>
+    <messages/>
+    <copyright>
+      <imageUrl>http://api.mqcdn.com/res/mqlogo.gif</imageUrl>
+      <imageAltText>© 2013 MapQuest, Inc.</imageAltText>
+      <text>© 2013 MapQuest, Inc.</text>
+    </copyright>
+  </info>
+  <route>
+    <sessionId>5138e7e4-01d9-0008-02b7-1c34-9c8e9912c9ca</sessionId>
+    <options>
+      <shapeFormat>raw</shapeFormat>
+      <generalize>-1.0</generalize>
+      <maxLinkId>0</maxLinkId>
+      <narrativeType>text</narrativeType>
+      <stateBoundaryDisplay>true</stateBoundaryDisplay>
+      <countryBoundaryDisplay>true</countryBoundaryDisplay>
+      <sideOfStreetDisplay>true</sideOfStreetDisplay>
+      <destinationManeuverDisplay>true</destinationManeuverDisplay>
+      <avoidTimedConditions>false</avoidTimedConditions>
+      <enhancedNarrative>false</enhancedNarrative>
+      <returnLinkDirections>false</returnLinkDirections>
+      <timeType>0</timeType>
+      <routeType>FASTEST</routeType>
+      <locale>en_US</locale>
+      <unit>M</unit>
+      <tryAvoidLinkIds/>
+      <mustAvoidLinkIds/>
+      <manmaps>true</manmaps>
+      <drivingStyle>2</drivingStyle>
+      <highwayEfficiency>22.0</highwayEfficiency>
+      <useTraffic>false</useTraffic>
+    </options>
+    <boundingBox>
+      <ul>
+        <lat>28.661147999999997</lat>
+        <lng>-81.20123199999999</lng>
+      </ul>
+      <lr>
+        <lat>28.638876999999997</lat>
+        <lng>-81.17410199999999</lng>
+      </lr>
+    </boundingBox>
+    <distance>3.088</distance>
+    <time>339</time>
+    <realTime>-1</realTime>
+    <fuelUsed>0.13632</fuelUsed>
+    <formattedTime>00:05:39</formattedTime>
+    <legs>
+      <leg>
+        <distance>3.088</distance>
+        <time>339</time>
+        <formattedTime>00:05:39</formattedTime>
+        <index>0</index>
+        <maneuvers>
+          <maneuver>
+            <startPoint>
+              <lat>28.6389</lat>
+              <lng>-81.1774</lng>
+            </startPoint>
+            <maneuverNotes/>
+            <distance>0.011</distance>
+            <time>8</time>
+            <formattedTime>00:00:08</formattedTime>
+            <attributes>0</attributes>
+            <turnType>0</turnType>
+            <direction>1</direction>
+            <narrative>Start out going north on Trout Creek Ct toward W Riviera Blvd.</narrative>
+            <directionName>North</directionName>
+            <index>0</index>
+            <streets>
+              <street>Trout Creek Ct</street>
+            </streets>
+            <signs/>
+            <iconUrl><![CDATA[http://content.mapquest.com/mqsite/turnsigns/rs_straight_sm.gif]]></iconUrl>
+            <linkIds/>
+            <mapUrl><![CDATA[http://open.mapquestapi.com/staticmap/v4/getmap?type=map&size=225,160&pois=purple-2,28.638876999999997,-81.177421,0,0|purple-3,28.639034,-81.17742899999999,0,0|&center=28.638955499999998,-81.177425&zoom=15&key=Kmjtd%7Cluu7n162n1%2C22%3Do5-h61wh&rand=1465819245&session=5138e7e4-01d9-0008-02b7-1c34-9c8e9912c9ca]]></mapUrl>
+          </maneuver>
+          <maneuver>
+            <startPoint>
+              <lat>28.639</lat>
+              <lng>-81.1774</lng>
+            </startPoint>
+            <maneuverNotes/>
+            <distance>0.21</distance>
+            <time>56</time>
+            <formattedTime>00:00:56</formattedTime>
+            <attributes>0</attributes>
+            <turnType>2</turnType>
+            <direction>8</direction>
+            <narrative>Turn right onto W Riviera Blvd.</narrative>
+            <directionName>East</directionName>
+            <index>1</index>
+            <streets>
+              <street>W Riviera Blvd</street>
+            </streets>
+            <signs/>
+            <iconUrl><![CDATA[http://content.mapquest.com/mqsite/turnsigns/rs_right_sm.gif]]></iconUrl>
+            <linkIds/>
+            <mapUrl><![CDATA[http://open.mapquestapi.com/staticmap/v4/getmap?type=map&size=225,160&pois=purple-3,28.639034,-81.17742899999999,0,0|purple-4,28.639778,-81.17410199999999,0,0|&center=28.639406,-81.17576549999998&zoom=13&key=Kmjtd%7Cluu7n162n1%2C22%3Do5-h61wh&rand=1465434496&session=5138e7e4-01d9-0008-02b7-1c34-9c8e9912c9ca]]></mapUrl>
+          </maneuver>
+          <maneuver>
+            <startPoint>
+              <lat>28.6398</lat>
+              <lng>-81.1741</lng>
+            </startPoint>
+            <maneuverNotes/>
+            <distance>1.192</distance>
+            <time>126</time>
+            <formattedTime>00:02:06</formattedTime>
+            <attributes>0</attributes>
+            <turnType>6</turnType>
+            <direction>1</direction>
+            <narrative>Turn left onto Lockwood Blvd.</narrative>
+            <directionName>North</directionName>
+            <index>2</index>
+            <streets>
+              <street>Lockwood Blvd</street>
+            </streets>
+            <signs/>
+            <iconUrl><![CDATA[http://content.mapquest.com/mqsite/turnsigns/rs_left_sm.gif]]></iconUrl>
+            <linkIds/>
+            <mapUrl><![CDATA[http://open.mapquestapi.com/staticmap/v4/getmap?type=map&size=225,160&pois=purple-4,28.639778,-81.17410199999999,0,0|purple-5,28.655981999999998,-81.179214,0,0|&center=28.64788,-81.176658&zoom=9&key=Kmjtd%7Cluu7n162n1%2C22%3Do5-h61wh&rand=1465434496&session=5138e7e4-01d9-0008-02b7-1c34-9c8e9912c9ca]]></mapUrl>
+          </maneuver>
+          <maneuver>
+            <startPoint>
+              <lat>28.656</lat>
+              <lng>-81.1792</lng>
+            </startPoint>
+            <maneuverNotes/>
+            <distance>1.294</distance>
+            <time>103</time>
+            <formattedTime>00:01:43</formattedTime>
+            <attributes>0</attributes>
+            <turnType>6</turnType>
+            <direction>7</direction>
+            <narrative>Turn left onto E Mitchell Hammock Rd.</narrative>
+            <directionName>West</directionName>
+            <index>3</index>
+            <streets>
+              <street>E Mitchell Hammock Rd</street>
+            </streets>
+            <signs/>
+            <iconUrl><![CDATA[http://content.mapquest.com/mqsite/turnsigns/rs_left_sm.gif]]></iconUrl>
+            <linkIds/>
+            <mapUrl><![CDATA[http://open.mapquestapi.com/staticmap/v4/getmap?type=map&size=225,160&pois=purple-5,28.655981999999998,-81.179214,0,0|purple-6,28.655872,-81.200439,0,0|&center=28.655927,-81.18982650000001&zoom=10&key=Kmjtd%7Cluu7n162n1%2C22%3Do5-h61wh&rand=1465434496&session=5138e7e4-01d9-0008-02b7-1c34-9c8e9912c9ca]]></mapUrl>
+          </maneuver>
+          <maneuver>
+            <startPoint>
+              <lat>28.6559</lat>
+              <lng>-81.2004</lng>
+            </startPoint>
+            <maneuverNotes/>
+            <distance>0.381</distance>
+            <time>46</time>
+            <formattedTime>00:00:46</formattedTime>
+            <attributes>0</attributes>
+            <turnType>2</turnType>
+            <direction>1</direction>
+            <narrative>Turn right onto Oviedo Blvd.</narrative>
+            <directionName>North</directionName>
+            <index>4</index>
+            <streets>
+              <street>Oviedo Blvd</street>
+            </streets>
+            <signs/>
+            <iconUrl><![CDATA[http://content.mapquest.com/mqsite/turnsigns/rs_right_sm.gif]]></iconUrl>
+            <linkIds/>
+            <mapUrl><![CDATA[http://open.mapquestapi.com/staticmap/v4/getmap?type=map&size=225,160&pois=purple-6,28.655872,-81.200439,0,0|purple-7,28.661147999999997,-81.20123199999999,0,0|&center=28.65851,-81.2008355&zoom=11&key=Kmjtd%7Cluu7n162n1%2C22%3Do5-h61wh&rand=1465434496&session=5138e7e4-01d9-0008-02b7-1c34-9c8e9912c9ca]]></mapUrl>
+          </maneuver>
+          <maneuver>
+            <startPoint/>
+            <maneuverNotes/>
+            <distance>0.0</distance>
+            <time>0</time>
+            <formattedTime>00:00:00</formattedTime>
+            <attributes>0</attributes>
+            <turnType>-1</turnType>
+            <direction>0</direction>
+            <narrative>OVIEDO BLVD.</narrative>
+            <directionName/>
+            <index>5</index>
+            <streets/>
+            <signs/>
+            <linkIds/>
+            <mapUrl><![CDATA[]]></mapUrl>
+          </maneuver>
+        </maneuvers>
+        <hasTollRoad>false</hasTollRoad>
+        <hasFerry>false</hasFerry>
+        <hasHighway>false</hasHighway>
+        <hasSeasonalClosure>false</hasSeasonalClosure>
+        <hasUnpaved>false</hasUnpaved>
+        <hasCountryCross>false</hasCountryCross>
+      </leg>
+    </legs>
+    <hasTollRoad>false</hasTollRoad>
+    <hasFerry>false</hasFerry>
+    <hasHighway>false</hasHighway>
+    <hasSeasonalClosure>false</hasSeasonalClosure>
+    <hasUnpaved>false</hasUnpaved>
+    <hasCountryCross>false</hasCountryCross>
+    <locations>
+      <location>
+        <street>Trout Creek Court</street>
+        <adminArea5 type="City">Oviedo</adminArea5>
+        <adminArea3 type="State">Florida</adminArea3>
+        <adminArea4 type="County">Seminole County</adminArea4>
+        <postalCode>32765</postalCode>
+        <adminArea1 type="Country">United States of America</adminArea1>
+        <geocodeQuality>ADDRESS</geocodeQuality>
+        <geocodeQualityCode>L1AAA</geocodeQualityCode>
+        <dragPoint>false</dragPoint>
+        <sideOfStreet>N</sideOfStreet>
+        <displayLatLng>
+          <latLng>
+            <lat>28.638874</lat>
+            <lng>-81.177536</lng>
+          </latLng>
+        </displayLatLng>
+        <linkId>46193660</linkId>
+        <type>s</type>
+        <latLng>
+          <lat>28.638874</lat>
+          <lng>-81.177533</lng>
+        </latLng>
+      </location>
+      <location>
+        <street>Oviedo Blvd</street>
+        <adminArea5 type="City">Oviedo</adminArea5>
+        <adminArea3 type="State">Florida</adminArea3>
+        <adminArea4 type="County">Seminole County</adminArea4>
+        <postalCode>32765</postalCode>
+        <adminArea1 type="Country">United States of America</adminArea1>
+        <geocodeQuality>ADDRESS</geocodeQuality>
+        <geocodeQualityCode>L1AAA</geocodeQualityCode>
+        <dragPoint>false</dragPoint>
+        <sideOfStreet>N</sideOfStreet>
+        <displayLatLng>
+          <latLng>
+            <lat>28.661148</lat>
+            <lng>-81.201232</lng>
+          </latLng>
+        </displayLatLng>
+        <linkId>46788421</linkId>
+        <type>s</type>
+        <latLng>
+          <lat>28.661149</lat>
+          <lng>-81.201231</lng>
+        </latLng>
+      </location>
+    </locations>
+    <locationSequence>0,1</locationSequence>
+    <computedWaypoints/>
+  </route>
+</response>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlaceSearchResponse>
+  <status>OK</status>
+  <result>
+    <name>Oviedo</name>
+    <vicinity>Oviedo</vicinity>
+    <type>locality</type>
+    <type>political</type>
+    <geometry>
+      <location>
+        <lat>28.6699970</lat>
+        <lng>-81.2081203</lng>
+      </location>
+      <viewport>
+        <southwest>
+          <lat>28.6265691</lat>
+          <lng>-81.2416228</lng>
+        </southwest>
+        <northeast>
+          <lat>28.6921191</lat>
+          <lng>-81.1341531</lng>
+        </northeast>
+      </viewport>
+    </geometry>
+    <icon>http://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png</icon>
+    <reference>CoQBdwAAAOZmEdmSDcXD4ajeHSl6nu1WiACVD80HOXghSUtyxj9WWMnItqYCZ6b8jBD6v-4WtH9PvgvGYXwrAzyfpJYVstmUTREVfCrhvmZkh_PwZLYnZC4eVGFZnzEBQEJM_O06HZbPC8F5OiWMPV3khsKHbNdbAc27UP3WMITT0bUwanD8EhDF1-YgXFszytOFM8wtSwEKGhSPtTU4yyHEK6OCUYTVTqNskfzrJg</reference>
+    <id>e379c7371b5ff1a60fac5eec8d2aaf8fe4d7baf5</id>
+  </result>
+  <result>
+    <name>Baldwin Fairchild Funeral Home</name>
+    <vicinity>501 East Mitchell Hammock Road, Oviedo</vicinity>
+    <type>funeral_home</type>
+    <type>establishment</type>
+    <geometry>
+      <location>
+        <lat>28.6565580</lat>
+        <lng>-81.1997660</lng>
+      </location>
+    </geometry>
+    <icon>http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png</icon>
+    <reference>CoQBfQAAACNfD4T-cTAmBKRJIuUZWdSURjs6mdAr5HhnsvDmAe936UnO9-KC_mc4DTc3i_rlpFtcLWTxlqm-exiguj4cSAR2D58UlTBNGpCrMyOoSbQ6exa1hmnNv9PqB0OP-iSaNO-9hM1JLAYOSzM8rgmbouG8vtsBc98HqALCMBpzCUtbEhBUtgJpQO8Iq1Yf542owtmtGhStqAwzvIB4GNMHX-57yQFQuIWx0w</reference>
+    <id>27b1a6d8d793b0b8cfb05ffc65c10daf08b751e5</id>
+    <photo>
+      <photo_reference>CnRsAAAAIFPbpFH6C7yitKTLKNhMxx0eIy3w4t79RPop5nUwVTiUfizEYt-GHwfd38IKBHQ4z9cJBjYZFoHd35xOB8ou6YL6JundUpO3XiU8x3nA1qUBIMuGW6cfEapQ_-DthmjS9osxci7r9HEDAkVE7vVXrxIQu_Pis3UOdzlDZZNZwIOOSRoUHl8c0QyVYyBs0i016L5QhxGnbcw</photo_reference>
+      <width>2048</width>
+      <height>1434</height>
+      <html_attribution>From a Google User</html_attribution>
+    </photo>
+  </result>
+  <result>
+    <name>Oviedo Chapel</name>
+    <vicinity>501 East Mitchell Hammock Road, Oviedo</vicinity>
+    <type>funeral_home</type>
+    <type>establishment</type>
+    <geometry>
+      <location>
+        <lat>28.6564490</lat>
+        <lng>-81.1996620</lng>
+      </location>
+    </geometry>
+    <icon>http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png</icon>
+    <reference>CnRrAAAAKHaXiwJRYDYj1LDU2mBMWEunDOX0mSY434_kvBGUHaQbvgpz6oc3XAIz_3DbeHpBnc-mWX_L9UIK8CZiv-ZBJAo9VYLW4ezG0912T9ckFXolEMCUQ0wvBHwfstgS-Pspb49Cj-X0c0V3ejj-jqO2xRIQuLTn0ABTRWQ1ZhV2z1QajRoUeq3GHz9T85PCQ2rlkM7gATfXGJk</reference>
+    <id>64bc0cc4bfef4b5573e30685705453be4fee3614</id>
+  </result>
+  <result>
+    <name>Oviedo Blvd and E Mitchell Hammock Rd</name>
+    <vicinity>United States</vicinity>
+    <type>bus_station</type>
+    <type>transit_station</type>
+    <type>establishment</type>
+    <geometry>
+      <location>
+        <lat>28.6564410</lat>
+        <lng>-81.2005890</lng>
+      </location>
+    </geometry>
+    <icon>http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png</icon>
+    <reference>CpQBhAAAAMD48f0xcBtTlt0Hw17ZbV2qM7YLoNIPwCLob3PK3UI1SqV-31Rhz_jzQjaJ0m0Z_WQp0625caR6MmzQrcmdDcsNA3LI4S2QECZOlTfazYOqtmu0cpOF9_R_EzmwB5m0L30ccHoYHCZGxPjFCFGWBglJN2tyP-VERJAxUiEo3OPmZ0vzodmyHHiEedd5z4QhARIQcNqqa6d1EJlKAqFo5_o4khoUi9DoWC9ZQxLLo88bVzJHL-age_Y</reference>
+    <id>ae54c6baefd41347a4f1c64c03affb863b7c8bd3</id>
+  </result>
+</PlaceSearchResponse>
