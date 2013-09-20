@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*Fonts*/
+
+@font-face {
+	font-family: Berthold;
+	src: url('../fonts/Berthold.otf');
+}
+
+
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.slide {
+	background-attachment: fixed;
+	width:100%;
+	height:100%;
+	overflow: hidden;
+	position: relative;
+	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+}
+
+div.cloud {
+	width: 100%;
+	height: 280px;
+	position: fixed;
+	bottom: -200px;
+}
+
+#sun {
+	top: 0;
+	left: 50%;
+	width: 300px;
+	margin-left: -150px;
+	position: fixed;
+	height: 250px;
+	background: url(../images/sun.png) no-repeat;
+}
+
+#arrow {
+	position: absolute;
+	background: black;
+	left: 50%;
+	bottom: 0;
+	z-index: 100;
+	width: 50px;
+	height: 50px;
+	margin-left: -25px;
+	color: white;
+	font: 50px Helvetica;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	text-align: center;
+}
+
+#cloud1 {
+	background: url(../images/cloud1.png) repeat-x 0px;
+}
+
+#cloud1high {
+	background: url(../images/cloud1.png) repeat-x 250px;
+}
+
+div#cloud2 {
+	background: url(../images/cloud2.png) repeat-x 400px;
+}
+
+div#cloud2high {
+	background: url(../images/cloud2.png) repeat-x -300px;
+}
+
+div#cloud1highleft {
+	background: url(../images/cloud2.png) repeat-x -200px;
+}
+
+.slide h2 {
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+	font: 76px "Lucida Grande";
+	left: 5px;
+}
+
+#slide1 {
+	background: -webkit-linear-gradient(#cafaff 0%, #00d9ff 100%);
+}
+
+
+/*				Slide 2				*/
+
+
+#slide2 {
+	background: #00d9ff;
+	height:900px;
+}
+
+div.cloudslide2 {
+	width: 100%;
+	height: 280px;
+	position: absolute;
+	bottom: 0;
+}
+
+div.cloudslide2#cloud1 {
+	background-position: 250px;
+	opacity: 0.4;
+	top: 200px;
+}
+
+div.cloudslide2#cloud2 {
+	background-position: 100px;
+	height: 400px;
+	background-size: 1200px 400px;
+}
+
+.content {
+	width: 960px;
+	border-radius: 20px;
+	position: relative;
+	top: 0px;
+	padding: 20px;
+	margin: 0 auto;
+	height: 540px;
+	z-index: 4;
+	background:rgba(0,217,255,0.9);
+	border: 5px solid white;
+}
+
+.content #balloon1 {
+	position: absolute;
+	left: 0;
+	top: -150px;
+	left: -40px
+}
+
+.content #balloon2 {
+	position: absolute;
+	right: 0;
+	top: -150px;
+	right: -40px;
+}
+
+/*About Me*/
+
+#about_me {
+	float: left;
+	width: 65%;
+}
+
+#about_additional {
+	float: left;
+	width: 35%;
+}
+
+#about_me h3 {
+	font: 82px Arial;
+	margin: 65px 0;
+	text-shadow: 1px 1px 2px black;
+	color: white;
+}
+
+#about_me h4 {
+	font: 69px Berthold;
+	color: white;
+}
+
+#about_me hr {
+	margin: 0;
+	height: 4px;
+	background-color: white;
+	border: 0;
+}
+
+#about_me p {
+	font: 24px Corbel;
+	text-align: justify;
+	color: white;
+}
+
+
+#about_additional #profile_pic{
+	display: block;
+	margin: 0 auto 50px;
+}
+
+#about_additional .contact_method {
+	float: left;
+ 	margin: 5px 0;
+}
+
+#about_additional .contact_method img {
+	float: left;
+	margin-left: 50px;
+}
+
+#about_additional .contact_method h4 {
+	margin-left: 10px;
+	float: left;
+	font: 30px Berthold;
+	color: white;
+}
+
+#about_additional .contact_method h4 a {
+	color: white;
+}
+
+
+/* Slide 3 */
+
+#slide3 {
+	background: url(../images/slide3bg.jpg) repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
