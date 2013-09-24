@@ -1,0 +1,319 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Custom Fonts */
+
+@font-face {
+	font-family: Circula;
+	src: url('../fonts/circula-medium.otf');
+}
+
+@font-face {
+	font-family: Raleway;
+	src: url('../fonts/raleway-regular.otf');
+}
+
+/* Basic styles */
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* Header Styles */
+
+header {
+	width: 100%;
+	margin-top: 10px;
+	background: white;
+}
+
+header a#my_work {
+	margin: 48px 30px 0 160px;
+	float: left;
+	width: 160px;
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid black;
+}
+
+header a#my_work h1 {
+	font: 31px Circula;
+	text-align: right;
+	height: 35px;
+}
+
+header img {
+	float: left;
+}
+
+header a#my_resume {
+	margin: 48px 0 0 30px;
+	float: left;
+	width: 160px;
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid black;
+}
+
+header a#my_resume h1 {
+	font: 31px Circula;
+	text-align: left;
+}
+
+/* Header Link Alternate Css */
+
+header a h2 {
+	height: 0;
+	overflow: hidden;
+	text-align: left;
+	font: 31px Circula;
+}
+
+header a h2.rollover {
+	text-align: right;
+}
+
+/* Live Tiles */
+
+div#live_tiles {
+	float: left;
+	width: 100%;
+	height: 430px;
+	margin-top: 20px;
+}
+
+div.column {
+	float: left;
+	width: 300px;
+	margin: 0 10px;
+	overflow: hidden;
+}
+
+div.tile {
+	width: 300px;
+	background: red;
+	margin-top: 5px;
+}
+
+/* Profile Pic Tile */
+
+div#profilepic_tile {
+	height: 300px;
+}
+
+/* Phone Tile */
+
+div#phone_tile {
+	background: url("../images/phone.png") no-repeat right center, #004687;
+	height: 128px;
+	color: white;
+}
+
+div#phone_tile h2 {
+	font: 36px "Myriad Pro";
+	padding: 58px 0 0 15px;
+}
+	
+/* Name Tile */
+
+div#name_tile {
+	background: url("../images/name_bg.gif") no-repeat;
+	height: 106px;
+}
+
+div#name_tile h2 {
+	color: white;
+	font: 34px Raleway;
+	padding: 37px 0 0 25px;
+}
+
+/* About Tile */
+
+div#about_tile {
+	background: #1168c1;
+	height: 321px;
+}
+
+div#about_tile p {
+	font: 18px "Myriad Pro";
+	color: white;
+	padding: 13px;
+	text-align: justify;
+}
+
+/* Facebook Tile */
+
+div#fb_tile {
+	height: 215px;
+	background: #1168c1;
+	position: relative;
+}
+
+div#fb_tile a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+div#fb_tile img {
+	position: absolute;
+	top: 50px;
+	left: 118px;
+}
+
+div#fb_tile h2 {
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	color: white;
+	opacity: 0;
+	font: 28px Circula;
+}
+
+/* Email Tile */
+
+div#email_tile {
+	height: 212px;
+	position: relative;
+	background: #1168c1;
+	z-index: 1;	
+}
+
+div#email_tile img {
+	position: absolute;
+	top: 35px;
+	left: 75px;
+}
+
+div#email_tile a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+div#email_tile h2 {
+	position: absolute;
+	left: 20px;
+	top: 100px;
+	color: white;
+	opacity: 0;
+	font: 28px Circula;
+	z-index: 2;
+}
+
+/* Cool Stuff */
+
+h3#cool {
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+	height: 80px;
+	font: 48px Raleway;
+}
+
+/* Additional */
+
+div#additional .column h3 {
+	font: 30px "Myriad Pro";
+	padding: 5px 0; 
+}
+
+div#additional .column p {
+	font: 18px "Myriad Pro";
+	line-height: 20px;
+}
+
+/* Footer Styles */
+
+footer {
+	width: 100%;
+	float: left;
+	padding-bottom: 20px;
+	margin: 60px 0 0 0;
+}
+
+footer .column img {
+	float: left;
+	margin: 20px 10px 0 30px;
+}
+
+footer .column h4 {
+	float: left;
+	font: 18px Circula;
+	margin-top: 35px;
+}
+
+footer .column h4 a {
+	text-decoration: none;
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
