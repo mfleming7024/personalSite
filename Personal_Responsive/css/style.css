@@ -130,7 +130,7 @@ header a h2.rollover {
 
 div#live_tiles {
 	float: left;
-	width: 100%;
+	width: 960px;
 	height: 430px;
 	margin-top: 20px;
 }
@@ -142,10 +142,13 @@ div.column {
 	overflow: hidden;
 }
 
+div.column div + div {
+	margin-top: 5px;
+}
+
 div.tile {
 	width: 300px;
 	background: red;
-	margin-top: 5px;
 }
 
 /* Profile Pic Tile */
@@ -257,6 +260,7 @@ div#email_tile h2 {
 /* Cool Stuff */
 
 h3#cool {
+	clear: both;
 	float: left;
 	width: 100%;
 	margin-top: 20px;
@@ -301,6 +305,101 @@ footer .column h4 a {
 	text-decoration: none;
 	color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*				My Work Page				*/
+
+#work_live_tiles {
+	float: left;
+	width: 960px;
+	height: 425px;
+	margin-top: 20px;
+}
+
+.work_tile {
+	width: 300px;
+	background: #7ebcf6;
+	overflow: hidden;
+}
+
+.work_tile .hidden {
+	position: absolute;
+/* 	opacity: 0; */
+}
+
+.work_column {
+	float: left;
+	width: 300px;
+	margin: 0 10px;
+	overflow: hidden;
+}
+
+div.work_column div + div {
+	margin-top: 20px;
+}
+
+.dark {
+	background: #4d94d8;
+}
+
+.darker {
+	background: #4481be;
+}
+
+/* Unhidden Elements */
+
+.work_tile h1 {
+	font: 38px Raleway;
+	padding: 10px;
+	color: white;
+}
+
+.work_tile .macbook {
+	width: 80%;
+	float: right;
+	padding: 0 5px 9px 0;
+}
+
+/* Hidden Elements */
+
+.hidden {
+	opacity: 0;
+}
+
+.work_tile .hidden p {
+	font: 18px "Myriad Pro";
+	color: white;
+	margin: 10px 40px 0 90px;
+	width: 200px;
+}
+
+.work_tile .hidden img {
+	float: left;
+	margin: 40px 0 0 20px;
+}
+
+.work_tile .hidden ul {
+	float: left;
+	width: 200px;
+	margin: 15px 0 0 22px;
+	font: 14px "Myriad Pro";
+	color: white;
+}
+
+
+
+
 
 
 

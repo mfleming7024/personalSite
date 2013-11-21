@@ -28,11 +28,11 @@ $("#fb_tile").hide().delay(500).fadeIn().on("mouseenter", function(){
 	var that = $(this);
 	
 	that.find("img").stop().animate({left: 30});
-	that.find("h2").stop().animate({opacity: 1});
+	that.find("h2").stop().delay(200).animate({opacity: 1});
 }).on("mouseleave", function(){
 	var that = $(this);
 	
-	that.find("img").stop().animate({left: 118});
+	that.find("img").stop().delay(200).animate({left: 118});
 	that.find("h2").stop().animate({opacity: 0});
 });
 
@@ -48,6 +48,25 @@ $("#email_tile").hide().delay(600).fadeIn().on("mouseenter", function(){
 	that.find("h2").stop().animate({opacity: 0}, "fast");
 });
 
+var documentBG = $("html");
+var color;
+
+$(".work_tile").on("mouseenter", function(){
+	var that = $(this);
+	
+	color = that.css("background-color");
+	console.log(color);
+	
+	that.find(".macbook").stop().animate({opacity: 0}, "fast");
+	that.find(".hidden").stop().animate({opacity: 1}, "fast");
+	that.stop().animate({"backgroundColor": "#22568f"}, "fast");
+}).on("mouseleave", function(){
+	var that = $(this);
+	
+	that.find(".macbook").stop().animate({opacity: 1}, "fast");
+	that.find(".hidden").stop().animate({opacity: 0}, "fast");
+	that.stop().animate({"backgroundColor": color}, "fast");
+});
 
 
 
