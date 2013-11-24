@@ -55,7 +55,6 @@ $(".work_tile").on("mouseenter", function(){
 	var that = $(this);
 	
 	color = that.css("background-color");
-	console.log(color);
 	
 	that.find(".macbook").stop().animate({opacity: 0}, "fast");
 	that.find(".hidden").stop().animate({opacity: 1}, "fast");
