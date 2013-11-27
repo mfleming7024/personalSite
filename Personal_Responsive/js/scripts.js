@@ -10,12 +10,12 @@ $("header a").each(function(index){
 		var that = $(this);
 
 		that.find("h1").stop().animate({height: 0, opacity: 0});
-		that.find("h2").stop().animate({height: "35px", color: randColor});
+		that.find("h2").stop().animate({height: $(this).height(), color: randColor});
 	}, function(){
 		var that = $(this);
 		
-		that.find("h1").stop().animate({height: "35px", opacity: 1});
-		that.find("h2").stop().animate({height: 0, color: "0x000000"});
+		that.find("h1").stop().animate({height: $(this).height(), opacity: 1});
+		that.find("h2").stop().animate({height: 0});
 	});
 });
 
