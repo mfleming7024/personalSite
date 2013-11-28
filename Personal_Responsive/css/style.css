@@ -716,14 +716,14 @@ div.work_column div + div {
 
 	.footer_column h4 a {
 		display: block;
-		font-size: 26px;
+		font-size: 24px;
 		text-align: left;
 		padding-left: 10px;
 	}
 	
 	footer .footer_column img {
 		width: 20%;
-		margin: 0;
+		margin: 10px 0 0 0;
 	}
 
 
