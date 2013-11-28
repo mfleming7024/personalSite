@@ -147,7 +147,7 @@ div#phone_tile {
 }
 
 div#phone_tile h2 {
-	font:36px "Myriad Pro";
+	font:36px 'Droid Sans'  sans-serif;
 	padding:58px 0 0 15px;
 }
 
@@ -170,7 +170,7 @@ div#about_tile {
 }
 
 div#about_tile p {
-	font:18px "Myriad Pro";
+	font:18px 'Droid Sans'  sans-serif;
 	color:#fff;
 	padding:13px;
 	text-align:justify;
@@ -247,12 +247,12 @@ h3#cool {
 
 /* Additional */
 div#additional .column h3 {
-	font:30px "Myriad Pro";
+	font:30px 'Droid Sans'  sans-serif;
 	padding:5px 0;
 }
 
 div#additional .column p {
-	font:18px "Myriad Pro";
+	font:18px 'Droid Sans'  sans-serif;
 	line-height:20px;
 }
 
@@ -349,7 +349,7 @@ div.work_column div + div {
 }
 
 .work_tile .hidden p {
-	font:18px "Myriad Pro";
+	font:18px 'Droid Sans'  sans-serif;
 	color:#fff;
 	margin:10px 40px 0 90px;
 	width:200px;
@@ -364,13 +364,17 @@ div.work_column div + div {
 	float:left;
 	width:200px;
 	margin:15px 0 0 22px;
-	font:14px "Myriad Pro";
+	font:14px 'Droid Sans'  sans-serif;
 	color:#fff;
 }
 
-/* RESPONSIVE TESTING */
+
+
+
 @media (max-width: 960px) {
-	/*Header*/
+	
+	/* Header Styles */
+	
 	body {
 		width:100%;
 	}
