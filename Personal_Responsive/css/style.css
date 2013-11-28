@@ -498,24 +498,11 @@ div.work_column div + div {
 
 @media (max-width: 842px) {
 	
+	/* My Work Styles */
+	
 	div#work_live_tiles {
 		height: auto;
 		width: 100%;
-	}
-
-	footer .footer_column {
-		width: 100%;
-		text-align: center;
-		float: left;
-	}
-	
-	footer .footer_column img {
-		width: 10%;
-	}
-	
-	footer .footer_column h4 {
-		width: 80%;
-		font-size: 36px;
 	}
 	
 	div.work_column {
@@ -532,6 +519,24 @@ div.work_column div + div {
 		width: 50%;
 		float: left;
 		margin: 0;
+	}
+	
+	/* Footer Styles */
+
+	footer .footer_column {
+		width: 100%;
+		text-align: center;
+		float: left;
+	}
+	
+	footer .footer_column img {
+		width: 10%;
+	}
+	
+	footer .footer_column h4 {
+		width: 80%;
+		font-size: 36px;
+		margin-top: 25px;
 	}
 
 }
@@ -589,6 +594,21 @@ div.work_column div + div {
 		margin: 3% 3% 0;
 	}
 	
+	/* My Work Page */
+	
+	div.work_tile h1 {
+		font-size: 30px;
+	}
+	
+	div.work_tile .hidden img {
+		display: none;
+	}
+	
+	div.work_tile .hidden p {
+		width: 95%;
+		margin: 0 0 0 10px;
+	}
+	
 	/* Footer Styles */
 	
 	.footer_column h4 a {
@@ -597,3 +617,119 @@ div.work_column div + div {
 	}
 	
 }
+
+
+@media (max-width: 500px) {
+
+	/* Header Styles */
+	
+	header a#my_logo {
+		float: left;
+		width: 80%;
+		margin: 0 10%;
+	}
+
+	header a#my_work {
+		float: left;
+		width: 94%;
+		margin: 0 3% 10px;
+	}	
+	
+	header a#my_work h1 {
+		text-align: center;
+		font-size: 40px;		
+	}
+	
+	header a h2.rollover {
+		text-align: center;
+		font-size: 40px;		
+	}
+	
+	header a#my_resume {
+		float: right;
+		width: 94%;
+		margin: 10px 3% 0;
+		border-top: 2px solid black;
+		border-bottom: none;
+	}
+	
+	header a#my_resume h1 {
+		text-align: center;
+		font-size: 40px;
+	}
+	
+	header a#my_resume h2 {
+		text-align: center;
+		font-size: 40px;		
+	}
+	
+	/* My Work */
+	
+	div.work_tile {
+		width: 100%;
+		float: left;
+		margin: 0;
+		border-bottom: 2px solid black;
+	}
+	
+	div.work_tile h1 {
+		font-size: 48px;
+	}
+	
+	div.work_tile .hidden p {
+		font-size: 34px;
+		width: 98%;
+	}
+	
+	div.work_tile .hidden ul {
+		font-size: 24px;
+		width: 100%;
+	}
+	
+	/* Footer Styles */
+
+}
+
+@media (max-width: 405px) {
+
+
+	/* My Work Styles */
+
+	div.work_tile .hidden p {
+		font-size: 24px;
+	}
+	
+	div.work_tile .hidden ul {
+		font-size: 20px;
+	}
+
+
+	/* Footer Styles */
+	
+	.footer_column h4 {
+		width: 70%;
+	}
+
+	.footer_column h4 a {
+		display: block;
+		font-size: 26px;
+		text-align: left;
+		padding-left: 10px;
+	}
+	
+	footer .footer_column img {
+		width: 20%;
+		margin: 0;
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
