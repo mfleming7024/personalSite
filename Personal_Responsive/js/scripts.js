@@ -32,7 +32,7 @@ $("#fb_tile").hide().delay(500).fadeIn().on("mouseenter", function(){
 }).on("mouseleave", function(){
 	var that = $(this);
 	
-	that.find("img").stop().delay(200).animate({left: 118});
+	that.find("img").stop().delay(200).animate({left: "40%"});
 	that.find("h2").stop().animate({opacity: 0});
 });
 
