@@ -147,7 +147,7 @@ div#phone_tile {
 }
 
 div#phone_tile h2 {
-	font:36px 'Droid Sans' sans-serif;
+	font:36px 'Droid Sans', sans-serif;
 	padding:58px 0 0 15px;
 }
 
@@ -170,7 +170,7 @@ div#about_tile {
 }
 
 div#about_tile p {
-	font:18px 'Droid Sans' sans-serif;
+	font:18px 'Droid Sans', sans-serif;
 	color:#fff;
 	padding:12px;
 }
@@ -246,12 +246,12 @@ h3#cool {
 
 /* Additional */
 div#additional .column h3 {
-	font:28px 'Droid Sans' sans-serif;
+	font:28px 'Droid Sans', sans-serif;
 	padding:5px 0;
 }
 
 div#additional .column p {
-	font:18px 'Droid Sans' sans-serif;
+	font:18px 'Droid Sans', sans-serif;
 	line-height:20px;
 }
 
@@ -348,7 +348,7 @@ div.work_column div + div {
 }
 
 .work_tile .hidden p {
-	font:18px 'Droid Sans' sans-serif;
+	font:18px 'Droid Sans', sans-serif;
 	color:#fff;
 	margin:10px 40px 0 90px;
 	width:200px;
@@ -363,7 +363,7 @@ div.work_column div + div {
 	float:left;
 	width:200px;
 	margin:15px 0 0 22px;
-	font:14px 'Droid Sans' sans-serif;
+	font:14px 'Droid Sans', sans-serif;
 	color:#fff;
 }
 
@@ -586,7 +586,8 @@ div.work_column div + div {
 	}
 	
 	div#live_tiles .column {
-		width: 47%;
+		width: 48%;
+		margin: 0 1% 0;
 	}
 	
 	div#profilepic_tile {
@@ -627,32 +628,9 @@ div.work_column div + div {
 	
 	/* Main Page Styles */
 	
-	/*
-div#live_tiles {
-		height: auto;
-		margin: 0;
-	}
-	
-	div#live_tiles .column {
-		width: 100%;
-		margin: 0;
-	}
-	
-	div#live_tiles .column .tile {
-		margin: 0;
-		width: 100%;
-	}
-*/
-	
 	div#live_tiles {
 		display: none;
 	}
-	
-/*
-	div.column #phone_tile {
-		display: none !important;
-	}
-*/
 	
 	/* My Work Page */
 	div.work_tile h1 {
@@ -719,6 +697,9 @@ div#live_tiles {
 	}
 	
 	/* Main Page Styles */
+	div#live_tiles {
+		margin: 0;
+	}
 	
 	div#additional .column {
 		width: 94%;
