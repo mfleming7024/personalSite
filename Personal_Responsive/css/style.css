@@ -2,779 +2,646 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
-	margin:0;
-	padding:0;
-	border:0;
-	font-size:100%;
-	font:inherit;
-	vertical-align:baseline;
-}
 
+html,body,div,span,h1,h2,h3,h4,h5,
+h6,p,a,img,ol,ul,li,form,footer,
+header,nav
 /* HTML5 display-role reset for older browsers */
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-	display:block;
-}
 
+footer,header,nav,section {
+    display: block;
+}
 body {
-	line-height:1;
+    line-height: 1;
 }
-
-ol,ul {
-	list-style:none;
+ol,
+ul {
+    list-style: none;
 }
-
-blockquote,q {
-	quotes:none;
-}
-
-blockquote:before,blockquote:after,q:before,q:after {
-	content:'';
-	content:none;
-}
-
 table {
-	border-collapse:collapse;
-	border-spacing:0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-
 /* Custom Fonts */
-@font-face {
-	font-family:Circula;
-	src:url(../fonts/circula-medium.otf);
-}
 
 @font-face {
-	font-family:Raleway;
-	src:url(../fonts/raleway-regular.otf);
+    font-family: Circula;
+    src: url(../fonts/circula-medium.otf);
 }
-
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/raleway-regular.otf);
+}
 /* Basic styles */
+
 html {
-	width:100%;
-	height:100%;
+    width: 100%;
+    height: 100%;
 }
-
 body {
-	width:960px;
-	margin:0 auto;
+    width: 960px;
+    margin: 0 auto;
 }
-
 /* Header Styles */
+
 header {
-	width:100%;
-	margin-top:10px;
-	background:#fff;
+    width: 100%;
+    margin-top: 10px;
+    background: #fff;
 }
-
 header a#my_work {
-	margin:48px 30px 0 160px;
-	float:left;
-	width:160px;
-	text-decoration:none;
-	color:#000;
-	border-bottom:2px solid #000;
+    margin: 48px 30px 0 160px;
+    float: left;
+    width: 160px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid #000;
 }
-
 header a#my_work h1 {
-	font:31px Circula;
-	text-align:right;
+    font: 31px Circula;
+    text-align: right;
 }
-
 header a#my_logo {
-	float:left;
+    float: left;
 }
-
 header a#my_resume {
-	margin:48px 30px 0;
-	float:left;
-	width:160px;
-	text-decoration:none;
-	color:#000;
-	border-bottom:2px solid #000;
+    margin: 48px 30px 0;
+    float: left;
+    width: 160px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid #000;
 }
-
 header a#my_resume h1 {
-	font:31px Circula;
-	text-align:left;
+    font: 31px Circula;
+    text-align: left;
 }
-
 /* Header Link Alternate Css */
+
 header a h2 {
-	height:0;
-	overflow:hidden;
-	text-align:left;
-	font:31px Circula;
+    height: 0;
+    overflow: hidden;
+    text-align: left;
+    font: 31px Circula;
 }
-
 header a h2.rollover {
-	text-align:right;
+    text-align: right;
 }
-
 /* Live Tiles */
+
 div#live_tiles {
-	float:left;
-	width:960px;
-	height:430px;
-	margin-top:20px;
+    float: left;
+    width: 960px;
+    height: 430px;
+    margin-top: 20px;
 }
-
 div.column {
-	float:left;
-	width:300px;
-	margin:0 10px;
-	overflow:hidden;
+    float: left;
+    width: 300px;
+    margin: 0 10px;
+    overflow: hidden;
 }
-
 div.column div + div {
-	margin-top:5px;
+    margin-top: 5px;
 }
-
 div.tile {
-	width:300px;
+    width: 300px;
 }
-
 /* Profile Pic Tile */
+
 div#profilepic_tile {
-	height:300px;
+    height: 300px;
 }
-
 /* Phone Tile */
+
 div#phone_tile {
-	background:url(../images/phone.png) no-repeat right center,#004687;
-	height:128px;
-	color:#fff;
+    background: url(../images/phone.png) no-repeat right center, #004687;
+    height: 128px;
+    color: #fff;
 }
-
 div#phone_tile h2 {
-	font:36px 'Droid Sans', sans-serif;
-	padding:58px 0 0 15px;
+    font: 36px'Droid Sans', sans-serif;
+    padding: 58px 0 0 15px;
 }
-
 /* Name Tile */
+
 div#name_tile {
-	background:url(../images/name_bg.gif) no-repeat;
-	height:106px;
+    background: url(../images/name_bg.gif) no-repeat;
+    height: 106px;
 }
-
 div#name_tile h2 {
-	color:#fff;
-	font:34px Raleway;
-	padding:37px 0 0 25px;
+    color: #fff;
+    font: 34px Raleway;
+    padding: 37px 0 0 25px;
 }
-
 /* About Tile */
+
 div#about_tile {
-	background:#1168c1;
-	height:321px;
+    background: #1168c1;
+    height: 321px;
 }
-
 div#about_tile p {
-	font:18px 'Droid Sans', sans-serif;
-	color:#fff;
-	padding:12px;
+    font: 18px'Droid Sans', sans-serif;
+    color: #fff;
+    padding: 12px;
 }
-
 /* Facebook Tile */
+
 div#fb_tile {
-	height:215px;
-	background:#1168c1;
-	position:relative;
+    height: 215px;
+    background: #1168c1;
+    position: relative;
 }
-
 div#fb_tile a {
-	display:block;
-	width:100%;
-	height:100%;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
-
 div#fb_tile img {
-	position:absolute;
-	top:50px;
-	left:118px;
+    position: absolute;
+    top: 50px;
+    left: 118px;
 }
-
 div#fb_tile h2 {
-	position:absolute;
-	left:100px;
-	top:100px;
-	color:#fff;
-	opacity:0;
-	font:28px Circula;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    color: #fff;
+    opacity: 0;
+    font: 28px Circula;
 }
-
 /* Email Tile */
+
 div#email_tile {
-	height:212px;
-	position:relative;
-	background:#1168c1;
-	z-index:1;
+    height: 212px;
+    position: relative;
+    background: #1168c1;
+    z-index: 1;
 }
-
 div#email_tile img {
-	position:absolute;
-	top:35px;
-	left:75px;
+    position: absolute;
+    top: 35px;
+    left: 75px;
 }
-
 div#email_tile a {
-	display:block;
-	width:100%;
-	height:100%;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
-
 div#email_tile h2 {
-	position:absolute;
-	left:20px;
-	top:85px;
-	color:#fff;
-	opacity:0;
-	font:28px Circula;
-	z-index:2;
+    position: absolute;
+    left: 20px;
+    top: 85px;
+    color: #fff;
+    opacity: 0;
+    font: 28px Circula;
+    z-index: 2;
 }
-
 /* Cool Stuff */
+
 h3#cool {
-	clear:both;
-	float:left;
-	width:100%;
-	margin-top:20px;
-	text-align:center;
-	height:80px;
-	font:48px Raleway;
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    height: 80px;
+    font: 48px Raleway;
 }
-
 /* Additional */
+
 div#additional .column h3 {
-	font:28px 'Droid Sans', sans-serif;
-	padding:5px 0;
+    font: 28px'Droid Sans', sans-serif;
+    padding: 5px 0;
 }
-
 div#additional .column p {
-	font:18px 'Droid Sans', sans-serif;
-	line-height:20px;
+    font: 18px'Droid Sans', sans-serif;
+    line-height: 20px;
 }
-
 /* Footer Styles */
+
 footer {
-	width:100%;
-	float:left;
-	padding-bottom:20px;
-	margin:60px 10px 0;
+    width: 100%;
+    float: left;
+    padding-bottom: 20px;
+    margin: 60px 10px 0;
 }
-
 .footer_column {
-	float:left;
-	width:300px;
-	height:100px;
-	margin:0 10px;
-	overflow:hidden;
+    float: left;
+    width: 300px;
+    height: 100px;
+    margin: 0 10px;
+    overflow: hidden;
 }
-
 footer > div:first-of-type {
-	margin-left:0;
+    margin-left: 0;
 }
-
 footer .footer_column img {
-	float:left;
-	margin:20px 10px 0 30px;
+    float: left;
+    margin: 20px 10px 0 30px;
 }
-
 footer .footer_column h4 {
-	float:left;
-	font:18px Circula;
-	margin-top:35px;
+    float: left;
+    font: 18px Circula;
+    margin-top: 35px;
 }
-
 footer .footer_column h4 a {
-	text-decoration:none;
-	color:#000;
+    text-decoration: none;
+    color: #000;
 }
-
 /*				My Work Page				*/
+
 #work_live_tiles {
-	float:left;
-	width:960px;
-	height:425px;
-	margin-top:20px;
+    float: left;
+    width: 960px;
+    height: 425px;
+    margin-top: 20px;
 }
-
 .work_tile {
-	width:300px;
-	background:#7ebcf6;
-	overflow:hidden;
+    width: 300px;
+    background: #7ebcf6;
+    overflow: hidden;
 }
-
 .work_tile .hidden {
-	position:absolute;
-/* 	opacity: 0; */
+    position: absolute;
+    /* 	opacity: 0; */
 }
-
 .work_column {
-	float:left;
-	width:300px;
-	margin:0 10px;
-	overflow:hidden;
+    float: left;
+    width: 300px;
+    margin: 0 10px;
+    overflow: hidden;
 }
-
 div.work_column div + div {
-	margin-top:20px;
+    margin-top: 20px;
 }
-
 .dark {
-	background:#4d94d8;
+    background: #4d94d8;
 }
-
 .darker {
-	background:#4481be;
+    background: #4481be;
 }
-
 /* Unhidden Elements */
+
 .work_tile h1 {
-	font:38px Raleway;
-	padding:10px;
-	color:#fff;
+    font: 38px Raleway;
+    padding: 10px;
+    color: #fff;
 }
-
 .work_tile .macbook {
-	width:80%;
-	float:right;
-	padding:0 5px 9px 0;
+    width: 80%;
+    float: right;
+    padding: 0 5px 9px 0;
 }
-
 /* Hidden Elements */
+
 .hidden {
-	opacity:0;
+    opacity: 0;
 }
-
 .work_tile .hidden p {
-	font:18px 'Droid Sans', sans-serif;
-	color:#fff;
-	margin:10px 40px 0 90px;
-	width:200px;
+    font: 18px'Droid Sans', sans-serif;
+    color: #fff;
+    margin: 10px 40px 0 90px;
+    width: 200px;
 }
-
 .work_tile .hidden img {
-	float:left;
-	margin:40px 0 0 20px;
+    float: left;
+    margin: 40px 0 0 20px;
 }
-
 .work_tile .hidden ul {
-	float:left;
-	width:200px;
-	margin:15px 0 0 22px;
-	font:14px 'Droid Sans', sans-serif;
-	color:#fff;
+    float: left;
+    width: 200px;
+    margin: 15px 0 0 22px;
+    font: 14px'Droid Sans', sans-serif;
+    color: #fff;
 }
-
 @media (max-width: 960px) {
-	/* Header Styles */
-	body {
-		width:100%;
-		margin: 0;
-		padding: 0;
-	}
-	
-	header a#my_work {
-		margin:48px 3.125% 0 16%;
-		float:left;
-		width:16.6666%;
-	}
-	
-	header a#my_logo {
-		width:27.291%;
-	}
-	
-	header a#my_logo img {
-		width:100%;
-	}
-	
-	header a#my_resume {
-		margin:48px 0 0 3%;
-		float:left;
-		width:16.6666%;
-	}
-	
-	div#work_live_tiles {
-		width:100%;
-		clear:both;
-	}
-	
-	div#live_tiles {
-		width:100%;
-		clear:both;
-	}
-	
-	/* Tiles Main page */
-	
-	div#profilepic_tile {
-		background: #1168c1;
-	}
-	
-	div#name_tile h2 {
-		font-size:26px;
-	}
-	
-	div#about_tile p {
-		font-size:16px;
-		padding:6%;
-	}
-	
-	div#phone_tile h2 {
-		font-size:26px;
-	}
-	
-	div#fb_tile img {
-		left:40%;
-	}
-	
-	div#fb_tile h2 {
-		font-size:26px;
-		left:85px;
-	}
-	
-	div#email_tile img {
-		left:27%;
-	}
-	
-	div#email_tile h2 {
-		font-size:26px;
-	}
-	
-	/* Columns */
-	div.work_column {
-		width:31.25%;
-		margin:0 1.04%;
-	}
-	
-	div.column {
-		width:31.25%;
-		margin:0 1.04%;
-	}
-	
-	div#additional .column h3 {
-		font-size:24px;
-	}
-	
-	div#additional .column p {
-		font-size:16px;
-	}
-	
-	div.work_tile {
-		width:100%;
-	}
-	
-	div.tile {
-		width:100%;
-	}
-	
-	div.column > img {
-		width:100%;
-	}
-	
-	/*Footer*/
-	footer {
-		width:100%;
-		margin-left:0;
-		margin-right:0;
-	}
-	
-	footer > img {
-		width:100%;
-	}
-	
-	footer .footer_column {
-		width:31.25%;
-		margin:0 1.04%;
-	}
+    /* Header Styles */
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    header a#my_work {
+        margin: 48px 3.125% 0 16%;
+        float: left;
+        width: 16.6666%;
+    }
+    header a#my_logo {
+        width: 27.291%;
+    }
+    header a#my_logo img {
+        width: 100%;
+    }
+    header a#my_resume {
+        margin: 48px 0 0 3%;
+        float: left;
+        width: 16.6666%;
+    }
+    div#work_live_tiles {
+        width: 100%;
+        clear: both;
+    }
+    div#live_tiles {
+        width: 100%;
+        clear: both;
+    }
+    /* Tiles Main page */
+    div#profilepic_tile {
+        background: #1168c1;
+    }
+    div#name_tile h2 {
+        font-size: 26px;
+    }
+    div#about_tile p {
+        font-size: 16px;
+        padding: 6%;
+    }
+    div#phone_tile h2 {
+        font-size: 26px;
+    }
+    div#fb_tile img {
+        left: 40%;
+    }
+    div#fb_tile h2 {
+        font-size: 26px;
+        left: 85px;
+    }
+    div#email_tile img {
+        left: 27%;
+    }
+    div#email_tile h2 {
+        font-size: 26px;
+    }
+    /* Columns */
+    div.work_column {
+        width: 31.25%;
+        margin: 0 1.04%;
+    }
+    div.column {
+        width: 31.25%;
+        margin: 0 1.04%;
+    }
+    div#additional .column h3 {
+        font-size: 24px;
+    }
+    div#additional .column p {
+        font-size: 16px;
+    }
+    div.work_tile {
+        width: 100%;
+    }
+    div.tile {
+        width: 100%;
+    }
+    div.column > img {
+        width: 100%;
+    }
+    /*Footer*/
+    footer {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    footer > img {
+        width: 100%;
+    }
+    footer .footer_column {
+        width: 31.25%;
+        margin: 0 1.04%;
+    }
 }
-
 /*Footer breaks at 842px*/
+
 @media (max-width: 842px) {
-
-	/* Main Page Styles */
-	
-	div#about_tile p {
-		font-size: 15px;
-		padding: 
-	}
-	
-	div#fb_tile h2 {
-		font-size: 22px;
-	}
-	
-	div#email_tile h2 {
-		font-size: 22px;
-	}
-	
-	div#additional .column h3 {
-		font-size:20px;
-	}
-	
-	div#additional .column p {
-		font-size: 14px;
-	}
-
-	/* My Work Styles */
-	div#work_live_tiles {
-		height:auto;
-		width:100%;
-	}
-	
-	div.work_column {
-		width:100%;
-		float:left;
-		margin:0;
-	}
-	
-	div.work_column div + div {
-		margin-top:0;
-	}
-	
-	div.work_tile {
-		width:50%;
-		float:left;
-		margin:0;
-	}
-	
-	/* Footer Styles */
-	footer .footer_column {
-		width:100%;
-		text-align:center;
-		float:left;
-	}
-	
-	footer .footer_column img {
-		width:10%;
-	}
-	
-	footer .footer_column h4 {
-		width:80%;
-		font-size:36px;
-		margin-top:25px;
-	}
+    /* Main Page Styles */
+    div#about_tile p {
+        font-size: 15px;
+        padding: ;
+    }
+    div#fb_tile h2 {
+        font-size: 22px;
+    }
+    div#email_tile h2 {
+        font-size: 22px;
+    }
+    div#additional .column h3 {
+        font-size: 20px;
+    }
+    div#additional .column p {
+        font-size: 14px;
+    }
+    /* My Work Styles */
+    div#work_live_tiles {
+        height: auto;
+        width: 100%;
+    }
+    div.work_column {
+        width: 100%;
+        float: left;
+        margin: 0;
+    }
+    div.work_column div + div {
+        margin-top: 0;
+    }
+    div.work_tile {
+        width: 50%;
+        float: left;
+        margin: 0;
+    }
+    /* Footer Styles */
+    footer .footer_column {
+        width: 100%;
+        text-align: center;
+        float: left;
+    }
+    footer .footer_column img {
+        width: 10%;
+    }
+    footer .footer_column h4 {
+        width: 80%;
+        font-size: 36px;
+        margin-top: 25px;
+    }
 }
-
 @media (max-width: 730px) {
-	/*Header*/
-	header a#my_work {
-		margin:48px 1.33333% 0 0;
-		float:left;
-		width:32%;
-	}
-	
-	header a#my_logo {
-		/* 27.291% */
-		width:33.33333%;
-	}
-	
-	header a#my_resume {
-		margin:48px 0 0 1.33333%;
-		float:left;
-		width:32%;
-	}
-	
-	/* Main Page Styles */
-	
-	div#about_tile p {
-		font-size: 18px;
-		padding: 2%;
-	}
-	
-	div#live_tiles #third {
-		display: none;
-	}
-	
-	div#live_tiles .column {
-		width: 48%;
-		margin: 0 1% 0;
-	}
-	
-	div#profilepic_tile {
-		background: #1168c1;
-		text-align: center;
-	}
-	
+    /*Header*/
+    header a#my_work {
+        margin: 48px 1.33333% 0 0;
+        float: left;
+        width: 32%;
+    }
+    header a#my_logo {
+        /* 27.291% */
+        width: 33.33333%;
+    }
+    header a#my_resume {
+        margin: 48px 0 0 1.33333%;
+        float: left;
+        width: 32%;
+    }
+    /* Main Page Styles */
+    div#about_tile p {
+        font-size: 18px;
+        padding: 2%;
+    }
+    div#live_tiles #third {
+        display: none;
+    }
+    div#live_tiles .column {
+        width: 48%;
+        margin: 0 1%;
+    }
+    div#profilepic_tile {
+        background: #1168c1;
+        text-align: center;
+    }
 }
-
 @media (max-width: 600px) {
-	/*Header Styles*/
-	header a#my_logo {
-		float:left;
-		width:44%;
-		min-width:200px;
-		margin:0 3%;
-	}
-	
-	header a#my_work {
-		float:right;
-		width:44%;
-		margin:0 3%;
-	}
-	
-	header a#my_work h1 {
-		text-align:left;
-	}
-	
-	header a h2.rollover {
-		text-align:left;
-	}
-	
-	header a#my_resume {
-		float:right;
-		width:44%;
-		margin:3% 3% 0;
-	}
-	
-	/* Main Page Styles */
-	
-	div#live_tiles {
-		display: none;
-	}
-	
-	/* My Work Page */
-	div.work_tile h1 {
-		font-size:30px;
-	}
-	
-	div.work_tile .hidden img {
-		display:none;
-	}
-	
-	div.work_tile .hidden p {
-		width:95%;
-		margin:0 0 0 10px;
-	}
-	
-	/* Footer Styles */
-	.footer_column h4 a {
-		display:block;
-		font-size:30px;
-	}
+    /*Header Styles*/
+    header a#my_logo {
+        float: left;
+        width: 44%;
+        min-width: 200px;
+        margin: 0 3%;
+    }
+    header a#my_work {
+        float: right;
+        width: 44%;
+        margin: 0 3%;
+    }
+    header a#my_work h1 {
+        text-align: left;
+    }
+    header a h2.rollover {
+        text-align: left;
+    }
+    header a#my_resume {
+        float: right;
+        width: 44%;
+        margin: 3% 3% 0;
+    }
+    /* Main Page Styles */
+    div#live_tiles {
+        display: none;
+    }
+    /* My Work Page */
+    div.work_tile h1 {
+        font-size: 30px;
+    }
+    div.work_tile .hidden img {
+        display: none;
+    }
+    div.work_tile .hidden p {
+        width: 95%;
+        margin: 0 0 0 10px;
+    }
+    /* Footer Styles */
+    .footer_column h4 a {
+        display: block;
+        font-size: 30px;
+    }
 }
-
 @media (max-width: 500px) {
-	
-	/* Header Styles */
-	header a#my_logo {
-		float:left;
-		width:80%;
-		margin:10px 10% 0;
-	}
-	
-	header a#my_work {
-		float:left;
-		width:94%;
-		margin:0 3%;
-	}
-	
-	header a#my_work h1 {
-		text-align:center;
-		font-size:40px;
-	}
-	
-	header a h2.rollover {
-		text-align:center;
-		font-size:40px;
-	}
-	
-	header a#my_resume {
-		float:right;
-		width:94%;
-		margin:10px 3% 0;
-		border-top:2px solid #000;
-		border-bottom:none;
-	}
-	
-	header a#my_resume h1 {
-		text-align:center;
-		font-size:40px;
-	}
-	
-	header a#my_resume h2 {
-		text-align:center;
-		font-size:40px;
-	}
-	
-	/* Main Page Styles */
-	div#live_tiles {
-		margin: 0;
-	}
-	
-	div#additional .column {
-		width: 94%;
-		float: left;
-		padding: 20px 3% 0;
-		margin: 0;
-	}
-	
-	div#additional .column h3 {
-		font-size:36px;
-	}
-	
-	div#additional .column p {
-		font-size: 24px;
-		line-height: 24px;
-	}
-	
-	h3#cool {
-		clear:both;
-		float:left;
-		width:100%;
-		margin-top:20px;
-		text-align:center;
-		height:40px;
-		font:38px Raleway;
-	}
-	
-	/* My Work */
-	div.work_tile {
-		width:100%;
-		float:left;
-		margin:0;
-		border-bottom:2px solid #000;
-	}
-	
-	div.work_tile h1 {
-		font-size:48px;
-	}
-	
-	div.work_tile .hidden p {
-		font-size:34px;
-		width:98%;
-	}
-	
-	div.work_tile .hidden ul {
-		font-size:24px;
-		width:100%;
-	}
-		
+    /* Header Styles */
+    header a#my_logo {
+        float: left;
+        width: 80%;
+        margin: 10px 10% 0;
+    }
+    header a#my_work {
+        float: left;
+        width: 94%;
+        margin: 0 3%;
+    }
+    header a#my_work h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+    header a h2.rollover {
+        text-align: center;
+        font-size: 40px;
+    }
+    header a#my_resume {
+        float: right;
+        width: 94%;
+        margin: 10px 3% 0;
+        border-top: 2px solid #000;
+        border-bottom: none;
+    }
+    header a#my_resume h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+    header a#my_resume h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+    /* Main Page Styles */
+    div#live_tiles {
+        margin: 0;
+    }
+    div#additional .column {
+        width: 94%;
+        float: left;
+        padding: 20px 3% 0;
+        margin: 0;
+    }
+    div#additional .column h3 {
+        font-size: 36px;
+    }
+    div#additional .column p {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    h3#cool {
+        clear: both;
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        height: 40px;
+        font: 38px Raleway;
+    }
+    /* My Work */
+    div.work_tile {
+        width: 100%;
+        float: left;
+        margin: 0;
+        border-bottom: 2px solid #000;
+    }
+    div.work_tile h1 {
+        font-size: 48px;
+    }
+    div.work_tile .hidden p {
+        font-size: 34px;
+        width: 98%;
+    }
+    div.work_tile .hidden ul {
+        font-size: 24px;
+        width: 100%;
+    }
 }
-
 @media (max-width: 405px) {
-	/* My Work Styles */
-	div.work_tile .hidden p {
-		font-size:24px;
-	}
-	
-	div.work_tile .hidden ul {
-		font-size:20px;
-	}
-	
-	/* Footer Styles */
-	.footer_column h4 {
-		width:70%;
-	}
-	
-	.footer_column h4 a {
-		display:block;
-		font-size:24px;
-		text-align:left;
-		padding-left:10px;
-	}
-	
-	footer .footer_column img {
-		width:20%;
-		margin:10px 0 0;
-	}
+    /* My Work Styles */
+    div.work_tile .hidden p {
+        font-size: 24px;
+    }
+    div.work_tile .hidden ul {
+        font-size: 20px;
+    }
+    /* Footer Styles */
+    .footer_column h4 {
+        width: 70%;
+    }
+    .footer_column h4 a {
+        display: block;
+        font-size: 24px;
+        text-align: left;
+        padding-left: 10px;
+    }
+    footer .footer_column img {
+        width: 20%;
+        margin: 10px 0 0;
+    }
 }
