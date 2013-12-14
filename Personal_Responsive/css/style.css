@@ -772,18 +772,17 @@ div.work_column div + div {
 	
 	/* Footer Styles */
 	.footer_column h4 {
-		width:70%;
+		width:30%;
 	}
 	
 	.footer_column h4 a {
-		display:block;
 		font-size:24px;
 		text-align:left;
-		padding-left:10px;
+		padding-left:15px;
 	}
 	
 	footer .footer_column img {
-		width:20%;
-		margin:10px 0 0;
+		width:15%;
+		margin:15px 0 0 10px;
 	}
 }
