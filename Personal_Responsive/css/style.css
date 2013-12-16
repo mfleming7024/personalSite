@@ -369,19 +369,11 @@ div.work_column div + div {
 
 @media (max-width: 960px) {
 	/* Header Styles */
-    html {
-        width: 100%;
-        overflow-x: hidden;
-        margin:0;
-        padding:0;
-    }
 	body {
 		width:100%;
-        overflow-x: hidden;
 		margin:0;
 		padding:0;
 	}
-    
 	
 	header a#my_work {
 		margin:48px 3.125% 0 16%;
@@ -752,15 +744,6 @@ div.work_column div + div {
 }
 
 @media (max-width: 405px) {
-    /* Main Page Styles */
-    div#additional .column h3 {
-		font-size:28px;
-	}
-	
-	div#additional .column p {
-		font-size:18px;
-		line-height:22px;
-	}    
 	/* My Work Styles */
 	div.work_tile .hidden p {
 		font-size:24px;
@@ -772,17 +755,18 @@ div.work_column div + div {
 	
 	/* Footer Styles */
 	.footer_column h4 {
-		width:30%;
+		width:70%;
 	}
 	
 	.footer_column h4 a {
+		display:block;
 		font-size:24px;
 		text-align:left;
-		padding-left:15px;
+		padding-left:10px;
 	}
 	
 	footer .footer_column img {
-		width:15%;
-		margin:15px 0 0 10px;
+		width:20%;
+		margin:10px 0 0;
 	}
 }
