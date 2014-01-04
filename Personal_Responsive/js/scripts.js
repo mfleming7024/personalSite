@@ -19,11 +19,13 @@ $("header a").each(function(index){
 	});
 });
 
+//Fade in effect
 $("#profilepic_tile").hide().delay(50).fadeIn();
 $("#phone_tile").hide().delay(200).fadeIn();
 $("#name_tile").hide().delay(300).fadeIn();
 $("#about_tile").hide().delay(400).fadeIn();
 
+//Facebook Animation
 $("#fb_tile").hide().delay(500).fadeIn().on("mouseenter", function(){
 	var that = $(this);
 	
@@ -36,6 +38,7 @@ $("#fb_tile").hide().delay(500).fadeIn().on("mouseenter", function(){
 	that.find("h2").stop().animate({opacity: 0});
 });
 
+//Email Animation
 $("#email_tile").hide().delay(600).fadeIn().on("mouseenter", function(){
 	var that = $(this);
 	
@@ -51,6 +54,7 @@ $("#email_tile").hide().delay(600).fadeIn().on("mouseenter", function(){
 var documentBG = $("html");
 var color;
 
+//My Work Tile Animation
 $(".work_tile").on("mouseenter", function(){
 	var that = $(this);
 	
