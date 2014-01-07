@@ -803,6 +803,15 @@ div.work_column div + div {
 }
 
 @media (max-width: 405px) {
+    /* Index Page */
+    div#additional .column h3 {
+        font-size: 30px;
+    }
+    
+    div#additional .column p {
+        font-size: 18px;
+    }
+    
 	/* My Work Styles */
 	div.work_tile .hidden p {
 		font-size:24px;
@@ -828,4 +837,7 @@ div.work_column div + div {
 		width:20%;
 		margin:10px 0 0;
 	}
+}
+h3 {
+    
 }
