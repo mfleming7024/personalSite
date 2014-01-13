@@ -805,7 +805,7 @@ div.work_column div + div {
 @media (max-width: 405px) {
     /* Index Page */
     div#additional .column h3 {
-        font-size: 30px;
+        font-size: 29px;
     }
     
     div#additional .column p {
@@ -838,6 +838,4 @@ div.work_column div + div {
 		margin:10px 0 0;
 	}
 }
-h3 {
-    
-}
+

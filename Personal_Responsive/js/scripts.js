@@ -58,14 +58,17 @@ var color;
 $(".work_tile").on("mouseenter", function(){
 	var that = $(this);
 	
+    //used to reset bg to previous color
 	color = that.css("background-color");
 	
+    that.find("h1").stop().animate({"color": "#00BFFF"}, "fast");
 	that.find(".macbook").stop().animate({opacity: 0}, "fast");
 	that.find(".hidden").stop().animate({opacity: 1}, "fast");
 	that.stop().animate({"backgroundColor": "#22568f"}, "fast");
 }).on("mouseleave", function(){
 	var that = $(this);
 	
+    that.find("h1").stop().animate({"color": "#ffffff"}, "fast");
 	that.find(".macbook").stop().animate({opacity: 1}, "fast");
 	that.find(".hidden").stop().animate({opacity: 0}, "fast");
 	that.stop().animate({"backgroundColor": color}, "fast");
