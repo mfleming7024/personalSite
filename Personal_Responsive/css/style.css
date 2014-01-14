@@ -176,28 +176,30 @@ div#about_tile p {
 }
 
 /* Facebook Tile */
-div#fb_tile {
+div#linkedin_tile {
 	height:215px;
-	background:#1168c1;
-	position:relative;
+	background:#01529d;
+    position:relative;
 }
 
-div#fb_tile a {
+div#linkedin_tile a {
 	display:block;
 	width:100%;
 	height:100%;
 }
 
-div#fb_tile img {
-	position:absolute;
-	top:50px;
-	left:118px;
+div#linkedin_tile img {
+    width:140px;
+    display:block;
+    margin:0 auto;
+    padding-top: 35px;
 }
 
-div#fb_tile h2 {
+div#linkedin_tile h2 {
 	position:absolute;
-	left:100px;
-	top:100px;
+    width:100%;
+    text-align:center;
+	top:90px;
 	color:#fff;
 	opacity:0;
 	font:28px Circula;
@@ -212,9 +214,10 @@ div#email_tile {
 }
 
 div#email_tile img {
-	position:absolute;
-	top:35px;
-	left:75px;
+    width: 145px;
+    display:block;
+    margin:0 auto;
+    padding-top: 35px;
 }
 
 div#email_tile a {
@@ -224,9 +227,10 @@ div#email_tile a {
 }
 
 div#email_tile h2 {
-	position:absolute;
-	left:20px;
-	top:85px;
+    position:absolute;
+    width: 100%;
+    text-align:center;
+    top:90px;
 	color:#fff;
 	opacity:0;
 	font:28px Circula;
@@ -309,8 +313,6 @@ footer .footer_column h4 a {
 .work_tile {
 	width:100%;
     float:left;
-    /*height:210px;
-    overflow:hidden;*/
     position:relative;
 	background:#7ebcf6;
 }
@@ -320,11 +322,15 @@ div.work_column div + div {
 }
 
 .dark {
-	background:#4d94d8;
+	background-color:#4d94d8;
 }
 
 .darker {
-	background:#4481be;
+	background-color:#4481be;
+}
+
+.darkest {
+    background-color:#01529d;
 }
 
 /* Unhidden Elements */
@@ -427,17 +433,8 @@ div.work_column div + div {
 		font-size:26px;
 	}
 	
-	div#fb_tile img {
-		left:40%;
-	}
-	
-	div#fb_tile h2 {
-		font-size:26px;
-		left:85px;
-	}
-	
-	div#email_tile img {
-		left:27%;
+	div#linkedin_tile h2 {
+		font-size:40px;
 	}
 	
 	div#email_tile h2 {

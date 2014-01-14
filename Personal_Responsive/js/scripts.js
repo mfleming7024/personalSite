@@ -26,15 +26,17 @@ $("#name_tile").hide().delay(300).fadeIn();
 $("#about_tile").hide().delay(400).fadeIn();
 
 //Facebook Animation
-$("#fb_tile").hide().delay(500).fadeIn().on("mouseenter", function(){
+$("#linkedin_tile").hide().delay(500).fadeIn().on("mouseenter", function(){
 	var that = $(this);
 	
-	that.find("img").stop().animate({left: 30});
+    that.stop().animate({"backgroundColor": "#003362"});
+	that.find("img").stop().animate({"width": "100%", "padding-top": "0", opacity: 0}, "fast");
 	that.find("h2").stop().delay(200).animate({opacity: 1});
 }).on("mouseleave", function(){
 	var that = $(this);
 	
-	that.find("img").stop().delay(200).animate({left: "40%"});
+    that.stop().animate({"backgroundColor": "#01529d"});
+	that.find("img").stop().delay(200).animate({"width": "140px", "padding-top": "35px", opacity: 1});
 	that.find("h2").stop().animate({opacity: 0});
 });
 
