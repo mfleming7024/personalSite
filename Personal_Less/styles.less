@@ -1,0 +1,143 @@
+/*Imports*/
+@import "flatui/reset.less";
+@import "flatui/column.less";
+@import "flatui/color.less";
+@import "flatui/mixin.less";
+//_______________________________________
+
+/*Fonts*/
+.font-face("Mohave", "fonts/Mohave.otf");
+//_______________________________________
+
+
+/*Regular Code*/
+h1 {
+    font-size: 36px;
+    clear: both;
+    font-family: "Mohave";
+}
+
+h2 {
+    font-size: 24px;
+}
+
+hr {
+    background-color: @silver;
+    height: 2px;
+    margin: 10px 0;
+}
+
+div#colorBlocks * {
+    .size(100%/20; 100px);
+    float: left;
+    &#alizarin      {background-color: @alizarin;       }
+    &#pomegranate   {background-color: @pomegranate;    }
+    &#carrot        {background-color: @carrot;         }
+    &#pumpkin       {background-color: @pumpkin;        }
+    &#sunflower     {background-color: @sunflower;      }
+    &#darksunflower {background-color: @darksunflower;  }
+    &#turquoise     {background-color: @turquoise;      }
+    &#greensea      {background-color: @greensea;       }
+    &#emerald       {background-color: @emerald;        }
+    &#nephritis     {background-color: @nephritis;      }
+    &#peterriver    {background-color: @peterriver;     }
+    &#belizehole    {background-color: @belizehole;     }
+    &#amethyst      {background-color: @amethyst;       }
+    &#wisteria      {background-color: @wisteria;       }
+    &#wetasphault   {background-color: @wetasphault;    }
+    &#midnightblue  {background-color: @midnightblue;   }
+    &#concrete      {background-color: @concrete;       }
+    &#asbestos      {background-color: @asbestos;       }
+    &#clouds        {background-color: @clouds;         }
+    &#silver        {background-color: @silver;         }
+}
+
+div#colorMath {
+    & * {
+        div:nth-child(2){.size(100%, 125px);}
+        div:nth-child(4){.size(100%, 125px);}
+    }
+    #lightened {
+        div:nth-child(2) {background-color: @midnightblue;}
+        div:nth-child(4) {background-color: lighten(@midnightblue, 20%);}
+    }
+    #darkened {
+        div:nth-child(2) {background-color: @emerald;}
+        div:nth-child(4) {background-color: darken(@emerald, 20%);}
+    }
+    #saturated {
+        @newcolor: desaturate(@carrot, 30%);
+        div:nth-child(2) {background-color: @newcolor;}
+        div:nth-child(4) {background-color: saturate(@newcolor, 60%);}
+    }
+}
+
+div#colorUses {
+    & * div {.size(100%, 125px);}
+    #hover {
+        div {
+           background-color: @sunflower;
+            &:hover {background-color: darken(@sunflower, 5%);} 
+        }
+    }
+    #gradient {
+        div {.gradient(@emerald,@emerald,darken(@emerald, 20%));}
+    }
+    #animation {
+        div {
+            background-color: @turquoise;
+            .transition(background-color, 0.5s, linear);
+            &:hover {background-color: darken(@turquoise, 10%);}
+        }
+    }
+}
+
+div#buttonExamples {
+    button {
+        clear: both;
+        float: left;
+    }
+    
+    //Regular Buttons
+    button.tiny_reg         {.tiny_button();                }
+    button.small_reg        {.small_button();               }
+    button.medium_reg       {.medium_button();              }
+    button.large_reg        {.large_button();               }
+    
+    //Error Buttons
+    button.tiny_err         {.tiny_button(@pomegranate);    }
+    button.small_err        {.small_button(@pomegranate);   }
+    button.medium_err       {.medium_button(@pomegranate);  }
+    button.large_err        {.large_button(@pomegranate);   }
+
+    //Attention Buttons
+    button.tiny_att         {.tiny_button(@sunflower);      }
+    button.small_att        {.small_button(@sunflower);     }
+    button.medium_att       {.medium_button(@sunflower);    }
+    button.large_att        {.large_button(@sunflower);     }
+}
+
+div#inputExamples {
+    input.regular           {.text_input(@concrete);        }
+    input.error             {.text_input(@alizarin);        }
+    input.success           {.text_input(@emerald);         }
+}
+
+div#radcheckExamples {
+    div.radio_button_blue   {.radio_button();               }
+    div.radio_button_red    {.radio_button(@alizarin);      }
+    div.radio_button_green  {.radio_button(@emerald);       }
+    
+    div.checkbox_blue       {.checkbox();                   }
+    div.checkbox_red        {.checkbox(@alizarin);          }
+    div.checkbox_green      {.checkbox(@emerald);           }
+}
+//----------------------------------------------------------
+
+
+
+
+
+
+
+

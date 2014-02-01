@@ -1,0 +1,210 @@
+/* #Basic Size
+================================================== */
+.size(@width; @height) {
+    width:  @width;
+    height: @height;
+}
+
+/* #Gradients
+================================================== */
+.gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
+  background: @color;
+  background: -webkit-gradient( linear,left bottom,left top,color-stop(0, @start),color-stop(1, @stop));
+  background: -ms-linear-gradient(bottom,@start,@stop);
+  background: -moz-linear-gradient(center bottom,@start 0%,@stop 100%);
+  background: -o-linear-gradient(@stop,@start);
+  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
+}
+
+/* #Border Radius
+================================================== */
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+.border-top-radius(@radius) {
+    border-top-right-radius:    @radius;
+    border-top-left-radius:     @radius;
+}
+.border-right-radius(@radius) {
+    border-bottom-right-radius: @radius;
+    border-top-right-radius:    @radius;
+}
+.border-bottom-radius(@radius) {
+    border-bottom-right-radius: @radius;
+    border-bottom-left-radius:  @radius;
+}
+.border-left-radius(@radius) {
+    border-bottom-left-radius:  @radius;
+    border-top-left-radius:     @radius;
+}
+
+/* #Box Shadow
+================================================== */
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @color: #333) {
+    -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @color);
+    -moz-box-shadow:    @x @y @blur rgba(0, 0, 0, @color);
+    box-shadow:         @x @y @blur rgba(0, 0, 0, @color);
+}
+
+/* #Box Sizing
+================================================== */
+.box-sizing (@prop) {
+    -webkit-box-sizing: @prop;
+    -moz-box-sizing:    @prop;
+    box-sizing:         @prop;
+}
+
+/* #Animations
+================================================== */
+.transition (@prop: all, @time: 0.5s, @ease: linear) {
+    -webkit-transition: @prop @time @ease;
+    -moz-transition:    @prop @time @ease;
+    -o-transition:      @prop @time @ease;
+    -ms-transition:     @prop @time @ease;
+    transition:         @prop @time @ease;
+}
+
+/* #Font Loading
+================================================== */
+.font-face (@name: Helvetca Neue, @url: "/assets/font/helvetica/helvetca-neue") {
+  @font-face {
+    font-family: %('%d', @name);
+    src: e(%("url('%d.eot?#') format('eot')", ~"@{url}")),
+         e(%("url('%d.woff') format('woff')", ~"@{url}")),
+         e(%("url('%d.ttf') format('truetype')", ~"@{url}"));
+  }
+}
+
+/* #Buttons
+================================================== */
+.button(@color: @emerald) {
+    border: 0;
+    background-color: @color;
+    color: lighten(@color, 60%);
+    .transition(all, 0.3s);
+    &:hover {
+        background-color: lighten(@color, 10%);
+    }
+}
+.tiny_button(@color: @emerald) {
+    .button(@color);
+    .border-radius(3px);
+    padding: 6px;
+    font-size: 12px;
+    line-height: 1.083;
+}
+.small_button(@color: @emerald) {
+    .button(@color);
+    .border-radius(4px);
+    padding: 9px;
+    font-size: 13px;
+    line-height: 1.385;
+}
+.medium_button(@color: @emerald) {
+    .button(@color);
+    .border-radius(6px);
+    padding: 10px;
+    font-size: 17px;
+    line-height: 1.471;
+}
+.large_button(@color: @emerald) {
+    .button(@color);
+    .border-radius(6px);
+    padding: 13px;
+    font-size: 22px;
+    line-height: 1.227;
+}
+
+/* #Input Fields
+================================================== */
+.text_input(@color: @concrete) {
+    border: 2px solid @color;
+    .border-radius(6px);
+    color: darken(@color, 15%);
+    font: 15px "Mohave";
+    line-height: 1.467;
+    padding: 8px 12px;
+    height: 41px;
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    .transition(border, .25s, linear);
+    .transition(color, .25s, linear);
+    .box-sizing(border-box);
+    &:focus {
+        border: 2px solid lighten(@color, 20%);
+        color: @color;
+    }
+}
+
+/* #Radio Buttons
+================================================== */
+.radio_button(@color: @peterriver) {
+    label {
+        float: left;
+        margin: 3px 7px;
+    }
+    input {
+        margin-top: 3px;
+        -webkit-appearance: none;
+        cursor: pointer;
+        float: left;
+        .size(22px, 22px);
+        .border-radius(15px);
+        border: 3px solid @color;
+        &:before {
+            font-size: 28px;  
+            text-align: center;  
+            line-height: 13px; 
+            content: "\25CF";   
+            color: darken(@color, 20%);  
+            visibility: hidden;
+        }
+        &:checked {
+            &:before {
+                visibility: visible;
+            }
+        }
+    }
+}
+
+
+/* #Radio Buttons
+================================================== */
+.checkbox(@color: @peterriver, @label: "Radio Button 1") {
+    label {
+        float: left;
+        margin: 3px 7px;
+    }
+    input {
+        margin-top: 3px;
+        -webkit-appearance: none;
+        cursor: pointer;
+        float: left;
+        .size(22px, 22px);
+        border: 3px solid @color;
+        &:before {
+            font-size: 20px;  
+            text-align: center;  
+            line-height: 17px; 
+            content: "\2713";   
+            color: darken(@color, 20%);  
+            visibility: hidden;
+        }
+        &:checked {
+            &:before {
+                visibility: visible;
+            }
+        }
+    }
+}
+
+
+
+
