@@ -444,6 +444,23 @@ a img {
     width: 420px;
   }
 }
+/* #Tablet (Portrait)
+================================================== */
+/* Note: Design for a width of 768px */
+/* #Mobile (Portrait)
+================================================== */
+/* Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+  input[type="text"] {
+    margin: 5px 0 !important;
+  }
+  #radcheck_divider {
+    margin: 5px 0;
+  }
+}
+/* #Mobile (Landscape)
+================================================== */
+/* Note: Design for a width of 480px */
 /*Flat Colors*/
 /* #Basic Size
 ================================================== */
@@ -462,6 +479,8 @@ a img {
 /* #Buttons
 ================================================== */
 /* #Input Fields
+================================================== */
+/* #Radio Buttons
 ================================================== */
 /* #Radio Buttons
 ================================================== */
@@ -881,7 +900,7 @@ div#inputExamples input.regular {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   color: #6d8082;
-  font: 15px "Mohave";
+  font: 15px "Helvetica";
   line-height: 1.467;
   padding: 8px 12px;
   height: 41px;
@@ -915,7 +934,7 @@ div#inputExamples input.error {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   color: #bf2718;
-  font: 15px "Mohave";
+  font: 15px "Helvetica";
   line-height: 1.467;
   padding: 8px 12px;
   height: 41px;
@@ -949,7 +968,7 @@ div#inputExamples input.success {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   color: #208e4e;
-  font: 15px "Mohave";
+  font: 15px "Helvetica";
   line-height: 1.467;
   padding: 8px 12px;
   height: 41px;
@@ -978,119 +997,233 @@ div#radcheckExamples div.radio_button_blue label {
   float: left;
   margin: 3px 7px;
 }
-div#radcheckExamples div.radio_button_blue div {
-  float: left;
-  position: relative;
-  cursor: pointer;
-}
-div#radcheckExamples div.radio_button_blue div input {
-  border: 3px solid #3498db;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  padding: 7px;
+div#radcheckExamples div.radio_button_blue input {
+  margin-top: 3px;
   -webkit-appearance: none;
   cursor: pointer;
-}
-div#radcheckExamples div.radio_button_blue div input + span {
-  position: absolute;
-  top: 9px;
-  right: 9px;
-  display: block;
-  background: #196090;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  float: left;
+  width: 22px;
+  height: 22px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  width: 8px;
-  height: 8px;
+  border: 3px solid #3498db;
+}
+div#radcheckExamples div.radio_button_blue input:before {
+  font-size: 28px;
+  text-align: center;
+  line-height: 13px;
+  content: "\25CF";
+  color: #196090;
   visibility: hidden;
 }
-div#radcheckExamples div.radio_button_blue div input:checked + span {
+div#radcheckExamples div.radio_button_blue input:checked:before {
   visibility: visible;
 }
 div#radcheckExamples div.radio_button_red label {
   float: left;
   margin: 3px 7px;
 }
-div#radcheckExamples div.radio_button_red div {
-  float: left;
-  position: relative;
-  cursor: pointer;
-}
-div#radcheckExamples div.radio_button_red div input {
-  border: 3px solid #e74c3c;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  padding: 7px;
+div#radcheckExamples div.radio_button_red input {
+  margin-top: 3px;
   -webkit-appearance: none;
   cursor: pointer;
-}
-div#radcheckExamples div.radio_button_red div input + span {
-  position: absolute;
-  top: 9px;
-  right: 9px;
-  display: block;
-  background: #a82315;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  float: left;
+  width: 22px;
+  height: 22px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  width: 8px;
-  height: 8px;
+  border: 3px solid #e74c3c;
+}
+div#radcheckExamples div.radio_button_red input:before {
+  font-size: 28px;
+  text-align: center;
+  line-height: 13px;
+  content: "\25CF";
+  color: #a82315;
   visibility: hidden;
 }
-div#radcheckExamples div.radio_button_red div input:checked + span {
+div#radcheckExamples div.radio_button_red input:checked:before {
   visibility: visible;
 }
 div#radcheckExamples div.radio_button_green label {
   float: left;
   margin: 3px 7px;
 }
-div#radcheckExamples div.radio_button_green div {
-  float: left;
-  position: relative;
-  cursor: pointer;
-}
-div#radcheckExamples div.radio_button_green div input {
-  border: 3px solid #2ecc71;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  padding: 7px;
+div#radcheckExamples div.radio_button_green input {
+  margin-top: 3px;
   -webkit-appearance: none;
   cursor: pointer;
-}
-div#radcheckExamples div.radio_button_green div input + span {
-  position: absolute;
-  top: 9px;
-  right: 9px;
-  display: block;
-  background: #1b7943;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  float: left;
+  width: 22px;
+  height: 22px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  width: 8px;
-  height: 8px;
+  border: 3px solid #2ecc71;
+}
+div#radcheckExamples div.radio_button_green input:before {
+  font-size: 28px;
+  text-align: center;
+  line-height: 13px;
+  content: "\25CF";
+  color: #1b7943;
   visibility: hidden;
 }
-div#radcheckExamples div.radio_button_green div input:checked + span {
+div#radcheckExamples div.radio_button_green input:checked:before {
+  visibility: visible;
+}
+div#radcheckExamples div.checkbox_blue label {
+  float: left;
+  margin: 3px 7px;
+}
+div#radcheckExamples div.checkbox_blue input {
+  margin-top: 3px;
+  -webkit-appearance: none;
+  cursor: pointer;
+  float: left;
+  width: 22px;
+  height: 22px;
+  border: 3px solid #3498db;
+}
+div#radcheckExamples div.checkbox_blue input:before {
+  font-size: 20px;
+  text-align: center;
+  line-height: 17px;
+  content: "\2713";
+  color: #1d6fa5;
+  visibility: hidden;
+}
+div#radcheckExamples div.checkbox_blue input:checked:before {
+  visibility: visible;
+}
+div#radcheckExamples div.checkbox_red label {
+  float: left;
+  margin: 3px 7px;
+}
+div#radcheckExamples div.checkbox_red input {
+  margin-top: 3px;
+  -webkit-appearance: none;
+  cursor: pointer;
+  float: left;
+  width: 22px;
+  height: 22px;
+  border: 3px solid #e74c3c;
+}
+div#radcheckExamples div.checkbox_red input:before {
+  font-size: 20px;
+  text-align: center;
+  line-height: 17px;
+  content: "\2713";
+  color: #bf2718;
+  visibility: hidden;
+}
+div#radcheckExamples div.checkbox_red input:checked:before {
+  visibility: visible;
+}
+div#radcheckExamples div.checkbox_green label {
+  float: left;
+  margin: 3px 7px;
+}
+div#radcheckExamples div.checkbox_green input {
+  margin-top: 3px;
+  -webkit-appearance: none;
+  cursor: pointer;
+  float: left;
+  width: 22px;
+  height: 22px;
+  border: 3px solid #2ecc71;
+}
+div#radcheckExamples div.checkbox_green input:before {
+  font-size: 20px;
+  text-align: center;
+  line-height: 17px;
+  content: "\2713";
+  color: #208e4e;
+  visibility: hidden;
+}
+div#radcheckExamples div.checkbox_green input:checked:before {
+  visibility: visible;
+}
+div#radcheckExamples div.checkbox_yellow label {
+  float: left;
+  margin: 3px 7px;
+}
+div#radcheckExamples div.checkbox_yellow input {
+  margin-top: 3px;
+  -webkit-appearance: none;
+  cursor: pointer;
+  float: left;
+  width: 22px;
+  height: 22px;
+  border: 3px solid #f1c40f;
+}
+div#radcheckExamples div.checkbox_yellow input:before {
+  font-size: 20px;
+  text-align: center;
+  line-height: 17px;
+  content: "\2713";
+  color: #aa8a0a;
+  visibility: hidden;
+}
+div#radcheckExamples div.checkbox_yellow input:checked:before {
+  visibility: visible;
+}
+div#radcheckExamples div.checkbox_orange label {
+  float: left;
+  margin: 3px 7px;
+}
+div#radcheckExamples div.checkbox_orange input {
+  margin-top: 3px;
+  -webkit-appearance: none;
+  cursor: pointer;
+  float: left;
+  width: 22px;
+  height: 22px;
+  border: 3px solid #e67e22;
+}
+div#radcheckExamples div.checkbox_orange input:before {
+  font-size: 20px;
+  text-align: center;
+  line-height: 17px;
+  content: "\2713";
+  color: #a85913;
+  visibility: hidden;
+}
+div#radcheckExamples div.checkbox_orange input:checked:before {
+  visibility: visible;
+}
+div#radcheckExamples div.checkbox_purple label {
+  float: left;
+  margin: 3px 7px;
+}
+div#radcheckExamples div.checkbox_purple input {
+  margin-top: 3px;
+  -webkit-appearance: none;
+  cursor: pointer;
+  float: left;
+  width: 22px;
+  height: 22px;
+  border: 3px solid #9b59b6;
+}
+div#radcheckExamples div.checkbox_purple input:before {
+  font-size: 20px;
+  text-align: center;
+  line-height: 17px;
+  content: "\2713";
+  color: #713b87;
+  visibility: hidden;
+}
+div#radcheckExamples div.checkbox_purple input:checked:before {
   visibility: visible;
 }
