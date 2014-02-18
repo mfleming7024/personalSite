@@ -126,7 +126,7 @@
 .text_input(@color: @concrete) {
     border: 2px solid @color;
     .border-radius(6px);
-    color: darken(@color, 15%);
+    color: lighten(@color, 15%);
     font: 15px "Helvetica";
     line-height: 1.467;
     padding: 8px 12px;
@@ -135,7 +135,6 @@
     -webkit-box-shadow: none;
     box-shadow: none;
     .transition(border, .25s, linear);
-    .transition(color, .25s, linear);
     .box-sizing(border-box);
     &:focus {
         border: 2px solid lighten(@color, 20%);
@@ -158,12 +157,9 @@
         .size(22px, 22px);
         .border-radius(15px);
         border: 3px solid @color;
+        background-color: lighten(@color, 10%);
         &:before {
-            font-size: 28px;  
-            text-align: center;  
-            line-height: 13px; 
-            content: "\25CF";   
-            color: darken(@color, 20%);  
+            content: url("flatui/images/radio.png");   
             visibility: hidden;
         }
         &:checked {
@@ -187,19 +183,18 @@
         -webkit-appearance: none;
         cursor: pointer;
         float: left;
+        .border-radius(5px);
         .size(22px, 22px);
-        border: 3px solid @color;
+        padding: 2px;
+        background-color: lighten(@color, 20%);
+        border: 2px solid @color;
         &:before {
-            font-size: 20px;  
-            text-align: center;  
-            line-height: 17px; 
-            content: "\2713";   
-            color: darken(@color, 15%);  
+            content: url("flatui/images/checkmark.png");
             visibility: hidden;
         }
         &:checked {
             &:before {
-                visibility: visible;
+                visibility: visible; 
             }
         }
     }

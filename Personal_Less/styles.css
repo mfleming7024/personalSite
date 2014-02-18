@@ -1092,19 +1092,23 @@ div#radcheckExamples div.checkbox_blue input {
   -webkit-appearance: none;
   cursor: pointer;
   float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   width: 22px;
   height: 22px;
-  border: 3px solid #3498db;
+  background-color: #8bc4ea;
+  border: 2px solid #3498db;
 }
-div#radcheckExamples div.checkbox_blue input:before {
-  font-size: 20px;
-  text-align: center;
-  line-height: 17px;
-  content: "\2713";
+div#radcheckExamples div.checkbox_blue input:after {
+  background-image: url("flatui/images/checkmark.png");
   color: #1d6fa5;
   visibility: hidden;
 }
-div#radcheckExamples div.checkbox_blue input:checked:before {
+div#radcheckExamples div.checkbox_blue input:checked:after {
   visibility: visible;
 }
 div#radcheckExamples div.checkbox_red label {
@@ -1116,19 +1120,23 @@ div#radcheckExamples div.checkbox_red input {
   -webkit-appearance: none;
   cursor: pointer;
   float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   width: 22px;
   height: 22px;
-  border: 3px solid #e74c3c;
+  background-color: #f29f97;
+  border: 2px solid #e74c3c;
 }
-div#radcheckExamples div.checkbox_red input:before {
-  font-size: 20px;
-  text-align: center;
-  line-height: 17px;
-  content: "\2713";
+div#radcheckExamples div.checkbox_red input:after {
+  background-image: url("flatui/images/checkmark.png");
   color: #bf2718;
   visibility: hidden;
 }
-div#radcheckExamples div.checkbox_red input:checked:before {
+div#radcheckExamples div.checkbox_red input:checked:after {
   visibility: visible;
 }
 div#radcheckExamples div.checkbox_green label {
@@ -1140,19 +1148,23 @@ div#radcheckExamples div.checkbox_green input {
   -webkit-appearance: none;
   cursor: pointer;
   float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   width: 22px;
   height: 22px;
-  border: 3px solid #2ecc71;
+  background-color: #7ee2a8;
+  border: 2px solid #2ecc71;
 }
-div#radcheckExamples div.checkbox_green input:before {
-  font-size: 20px;
-  text-align: center;
-  line-height: 17px;
-  content: "\2713";
+div#radcheckExamples div.checkbox_green input:after {
+  background-image: url("flatui/images/checkmark.png");
   color: #208e4e;
   visibility: hidden;
 }
-div#radcheckExamples div.checkbox_green input:checked:before {
+div#radcheckExamples div.checkbox_green input:checked:after {
   visibility: visible;
 }
 div#radcheckExamples div.checkbox_yellow label {
@@ -1164,19 +1176,23 @@ div#radcheckExamples div.checkbox_yellow input {
   -webkit-appearance: none;
   cursor: pointer;
   float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   width: 22px;
   height: 22px;
-  border: 3px solid #f1c40f;
+  background-color: #f7dc6f;
+  border: 2px solid #f1c40f;
 }
-div#radcheckExamples div.checkbox_yellow input:before {
-  font-size: 20px;
-  text-align: center;
-  line-height: 17px;
-  content: "\2713";
+div#radcheckExamples div.checkbox_yellow input:after {
+  background-image: url("flatui/images/checkmark.png");
   color: #aa8a0a;
   visibility: hidden;
 }
-div#radcheckExamples div.checkbox_yellow input:checked:before {
+div#radcheckExamples div.checkbox_yellow input:checked:after {
   visibility: visible;
 }
 div#radcheckExamples div.checkbox_orange label {
@@ -1188,19 +1204,23 @@ div#radcheckExamples div.checkbox_orange input {
   -webkit-appearance: none;
   cursor: pointer;
   float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   width: 22px;
   height: 22px;
-  border: 3px solid #e67e22;
+  background-color: #f0b37e;
+  border: 2px solid #e67e22;
 }
-div#radcheckExamples div.checkbox_orange input:before {
-  font-size: 20px;
-  text-align: center;
-  line-height: 17px;
-  content: "\2713";
+div#radcheckExamples div.checkbox_orange input:after {
+  background-image: url("flatui/images/checkmark.png");
   color: #a85913;
   visibility: hidden;
 }
-div#radcheckExamples div.checkbox_orange input:checked:before {
+div#radcheckExamples div.checkbox_orange input:checked:after {
   visibility: visible;
 }
 div#radcheckExamples div.checkbox_purple label {
@@ -1212,18 +1232,22 @@ div#radcheckExamples div.checkbox_purple input {
   -webkit-appearance: none;
   cursor: pointer;
   float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   width: 22px;
   height: 22px;
-  border: 3px solid #9b59b6;
+  background-color: #c6a0d5;
+  border: 2px solid #9b59b6;
 }
-div#radcheckExamples div.checkbox_purple input:before {
-  font-size: 20px;
-  text-align: center;
-  line-height: 17px;
-  content: "\2713";
+div#radcheckExamples div.checkbox_purple input:after {
+  background-image: url("flatui/images/checkmark.png");
   color: #713b87;
   visibility: hidden;
 }
-div#radcheckExamples div.checkbox_purple input:checked:before {
+div#radcheckExamples div.checkbox_purple input:checked:after {
   visibility: visible;
 }
