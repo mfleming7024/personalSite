@@ -161,10 +161,13 @@
         &:before {
             content: url("flatui/images/radio.png");   
             visibility: hidden;
+            .transition(all, 0.2s);
+            opacity: 0;
         }
         &:checked {
             &:before {
                 visibility: visible;
+                opacity: 1;
             }
         }
     }
@@ -186,15 +189,18 @@
         .border-radius(5px);
         .size(22px, 22px);
         padding: 2px;
-        background-color: lighten(@color, 20%);
+        background-color: lighten(@color, 15%);
         border: 2px solid @color;
         &:before {
             content: url("flatui/images/checkmark.png");
             visibility: hidden;
+            .transition(all, 0.2s);
+            opacity: 0;
         }
         &:checked {
             &:before {
-                visibility: visible; 
+                visibility: visible;
+                opacity: 1;
             }
         }
     }
