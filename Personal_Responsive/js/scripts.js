@@ -1,8 +1,10 @@
+var randColor = "";
+
 $("header a").each(function(index){
 	var that = $(this);
 	
 	that.hover(function(){
-		var randColor = 'rgb('
+		randColor = 'rgb('
             + (Math.floor(Math.random() * 256)) + ','
             + (Math.floor(Math.random() * 256)) + ','
             + (Math.floor(Math.random() * 256)) + ')';
@@ -53,7 +55,6 @@ $("#email_tile").hide().delay(600).fadeIn().on("mouseenter", function(){
 	that.find("h2").stop().animate({opacity: 0}, "fast");
 });
 
-var documentBG = $("html");
 var color;
 
 //My Work Tile Animation
