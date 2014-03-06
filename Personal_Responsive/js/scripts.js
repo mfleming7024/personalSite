@@ -1,24 +1,32 @@
 var randColor = "";
 
 $("header a").each(function(index){
-	var that = $(this);
-	
-	that.hover(function(){
-		randColor = 'rgb('
-            + (Math.floor(Math.random() * 256)) + ','
-            + (Math.floor(Math.random() * 256)) + ','
-            + (Math.floor(Math.random() * 256)) + ')';
-            
-		var that = $(this);
+    var that = $(this);
 
-		that.find("h1").stop().animate({height: 0, opacity: 0});
-		that.find("h2").stop().animate({height: $(this).height(), color: randColor});
-	}, function(){
-		var that = $(this);
-		
-		that.find("h1").stop().animate({height: $(this).height(), opacity: 1});
-		that.find("h2").stop().animate({height: 0});
-	});
+    that.hover(function(){
+        if ($(window).width() > 500) {
+            randColor = 'rgb('
+                + (Math.floor(Math.random() * 256)) + ','
+                + (Math.floor(Math.random() * 256)) + ','
+                + (Math.floor(Math.random() * 256)) + ')';
+
+            var that = $(this);
+
+            that.find("h1").stop().animate({height: 0, opacity: 0});
+            that.find("h2").stop().animate({height: $(this).height(), color: randColor});
+        } else {
+            //mobile
+        }
+    }, function(){
+        if ($(window).width() > 500) {
+            var that = $(this);
+
+            that.find("h1").stop().animate({height: $(this).height(), opacity: 1});
+            that.find("h2").stop().animate({height: 0});
+        } else {
+            //mobile
+        }
+    });
 });
 
 //Fade in effect
@@ -31,14 +39,13 @@ $("#about_tile").hide().delay(400).fadeIn();
 $("#linkedin_tile").hide().delay(500).fadeIn().on("mouseenter", function(){
 	var that = $(this);
 	
-    that.stop().animate({"backgroundColor": "#003362"});
 	that.find("img").stop().animate({"width": "100%", "padding-top": "0", opacity: 0}, "fast");
-	that.find("h2").stop().delay(200).animate({opacity: 1});
+	that.find("h2").stop().animate({opacity: 1});
 }).on("mouseleave", function(){
 	var that = $(this);
 	
     that.stop().animate({"backgroundColor": "#01529d"});
-	that.find("img").stop().delay(200).animate({"width": "140px", "padding-top": "35px", opacity: 1});
+	that.find("img").stop().animate({"width": "140px", "padding-top": "35px", opacity: 1});
 	that.find("h2").stop().animate({opacity: 0});
 });
 

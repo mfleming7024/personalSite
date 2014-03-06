@@ -708,10 +708,18 @@ div.work_column div + div {
 	header a#my_logo {
 		float:left;
 		width:80%;
-		margin:10px 10% 0;
+		margin:10px 10%;
 	}
 	
 	header a#my_work {
+        border: none;
+		float:left;
+		width:94%;
+		margin:0 3%;
+	}
+    
+    header a#my_resume {
+        border: none;
 		float:left;
 		width:94%;
 		margin:0 3%;
@@ -722,27 +730,17 @@ div.work_column div + div {
 		font-size:40px;
 	}
 	
-	header a h2.rollover {
-		text-align:center;
-		font-size:40px;
-	}
-	
-	header a#my_resume {
-		float:right;
-		width:94%;
-		margin:10px 3% 0;
-		border-top:2px solid #000;
-		border-bottom:none;
-	}
-	
 	header a#my_resume h1 {
 		text-align:center;
 		font-size:40px;
 	}
 	
 	header a#my_resume h2 {
-		text-align:center;
-		font-size:40px;
+        visibility: hidden;
+	}
+    
+    header a h2.rollover {
+		visibility: hidden;
 	}
 	
 	/* Main Page Styles */
